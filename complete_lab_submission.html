@@ -52,7 +52,7 @@
         color: #666666;
     }
 
-    /* Cover Page Styling (Clean White University Theme - No Borders) */
+    /* Cover Page Styling */
     .cover-page {
         background-color: #ffffff;
         color: #111111;
@@ -63,7 +63,6 @@
         justify-content: space-between;
         position: relative;
     }
-
     .cover-univ {
         text-align: center;
         margin-top: 30px;
@@ -150,19 +149,19 @@
 
     /* Content Typography */
     h1.doc-title {
-        font-size: 13.5pt;
+        font-size: 13pt;
         font-weight: bold;
         margin: 0 0 4px 0;
         color: #000;
     }
     h2.doc-subtitle {
-        font-size: 11.5pt;
+        font-size: 11pt;
         font-weight: bold;
         margin: 0 0 8px 0;
         color: #000;
     }
     h2.sec-heading {
-        font-size: 11pt;
+        font-size: 10.5pt;
         font-weight: bold;
         margin: 8px 0 4px 0;
         color: #000;
@@ -179,12 +178,12 @@
     table.data-table {
         width: 100%;
         border-collapse: collapse;
-        margin: 8px 0 12px 0;
-        font-size: 8.8pt;
+        margin: 6px 0 10px 0;
+        font-size: 8.5pt;
     }
     table.data-table th, table.data-table td {
         border: 1px solid #333333;
-        padding: 6px 10px;
+        padding: 5px 8px;
         text-align: left;
     }
     table.data-table th {
@@ -196,10 +195,10 @@
     .code-card {
         background-color: #1e1e1e;
         color: #d4d4d4;
-        padding: 10px 14px;
+        padding: 8px 12px;
         font-family: Consolas, "Courier New", monospace;
-        font-size: 8.5pt;
-        line-height: 1.34;
+        font-size: 8pt;
+        line-height: 1.32;
         white-space: pre-wrap;
         margin: 5px 0 8px 0;
         border-radius: 3px;
@@ -225,9 +224,9 @@
         display: flex;
         align-items: center;
         gap: 18px;
-        padding: 5px 14px;
+        padding: 4px 12px;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        font-size: 8pt;
+        font-size: 7.8pt;
         color: #969696;
         border-bottom: 1px solid #1e1e1e;
         white-space: nowrap;
@@ -240,7 +239,7 @@
     .terminal-tab-active::after {
         content: "";
         position: absolute;
-        bottom: -6px;
+        bottom: -5px;
         left: 0;
         right: 0;
         height: 2px;
@@ -248,167 +247,276 @@
     }
     .terminal-body {
         background-color: #181818;
-        color: #cccccc;
+        padding: 7px 12px;
         font-family: Consolas, "Courier New", monospace;
-        font-size: 8.3pt;
-        line-height: 1.35;
-        padding: 8px 12px;
+        font-size: 7.2pt;
+        line-height: 1.28;
+        color: #cccccc;
         white-space: pre-wrap;
         word-break: break-word;
     }
     .ps-path {
-        color: #e6edf3;
+        color: #569cd6;
     }
     .ps-cmd {
-        color: #3fb950;
-        font-weight: 500;
+        color: #ffffff;
     }
     .ps-cursor {
         display: inline-block;
-        background: #ffffff;
-        color: #181818;
-        font-weight: bold;
-        line-height: 1;
+        width: 7px;
+        height: 12px;
+        background-color: #ffffff;
+        vertical-align: middle;
     }
 </style>
 </head>
 <body>
 
 <!-- ================= COVER PAGE ================= -->
-<div class="page">
-    <div class="cover-page">
-        <div class="cover-univ">
-            <h2>THE MAHARAJA SAYAJIRAO UNIVERSITY OF BARODA</h2>
-            <h3>FACULTY OF TECHNOLOGY AND ENGINEERING</h3>
-            <h4>DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING</h4>
-        </div>
+<div class="page cover-page">
+    <div class="cover-univ">
+        <h2>THE MAHARAJA SAYAJIRAO UNIVERSITY OF BARODA</h2>
+        <h3>FACULTY OF TECHNOLOGY AND ENGINEERING</h3>
+        <h4>DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING</h4>
+        <div class="cover-divider"></div>
+    </div>
 
-        <div class="cover-title">
-            <h1>LABORATORY WORK SUBMISSION</h1>
-            <h2>ARTIFICIAL INTELLIGENCE (AI)</h2>
-            <p>Practical 1, 2, 3: Search Algorithms & Hill Climbing Variants</p>
-            <p>Academic Year: 2026 – 2027</p>
-        </div>
+    <div class="cover-title">
+        <h1>LABORATORY PRACTICAL REPORT</h1>
+        <h2>Artificial Intelligence Lab (BE-III Computer Science)</h2>
+        <p>Academic Year: 2026 - 2027 &nbsp;|&nbsp; Term: Dec 2026</p>
+        <br>
+        <p style="font-size: 11pt; color: #1e3a8a; font-weight: bold;">Practical 1, 2, 3: Search Algorithms (BFS, DFS, A*) &amp; Hill Climbing Variants</p>
+    </div>
 
-        <div class="cover-table-container">
-            <table class="cover-table">
-                <tr>
-                    <td class="label">Student Name:</td>
-                    <td class="val">KHATRI OM KUMAR</td>
-                </tr>
-                <tr>
-                    <td class="label">PRN:</td>
-                    <td class="val">8024056707</td>
-                </tr>
-                <tr>
-                    <td class="label">Roll No:</td>
-                    <td class="val">36</td>
-                </tr>
-                <tr>
-                    <td class="label">Class:</td>
-                    <td class="val">BE-III (GIA)</td>
-                </tr>
-                <tr>
-                    <td class="label">Branch:</td>
-                    <td class="val">Computer Science & Engineering</td>
-                </tr>
-                <tr>
-                    <td class="label">Subject:</td>
-                    <td class="val">Artificial Intelligence (AI)</td>
-                </tr>
-            </table>
-        </div>
+    <div class="cover-table-container">
+        <table class="cover-table">
+            <tr>
+                <td class="label">Name:</td>
+                <td class="val">KHATRI OM KUMAR</td>
+            </tr>
+            <tr>
+                <td class="label">PRN:</td>
+                <td class="val">8024056707</td>
+            </tr>
+            <tr>
+                <td class="label">Roll No:</td>
+                <td class="val">36</td>
+            </tr>
+            <tr>
+                <td class="label">Class:</td>
+                <td class="val">BE-III (GIA)</td>
+            </tr>
+            <tr>
+                <td class="label">Branch:</td>
+                <td class="val">Computer Science &amp; Engineering</td>
+            </tr>
+            <tr>
+                <td class="label">Subject:</td>
+                <td class="val">Artificial Intelligence (AI)</td>
+            </tr>
+        </table>
     </div>
 </div>
 
 <!-- ================= PART 1: PAGE 1 ================= -->
 <div class="page">
     <div class="content-body">
-        <h1 class="doc-title">Practical 1, 2, 3: Implement Search Algorithms</h1>
+        <h1 class="doc-title">Practical 1, 2, 3: Implement Search Algorithms (3 weeks)</h1>
         <h2 class="doc-subtitle">Path Finding on a City Map</h2>
         
-        <p>1. Check the cities.py file. That is the map of the cites</p>
-        <p class="arrow-bullet">➔ graph = {</p>
+        <p><strong>Problem Statement:</strong></p>
+        <p>1. Check the <code>cities.py</code> / <code>city_map.py</code> file representing the graph map of Indian cities with road distances.</p>
+        <p>2. Pick 15 random goal states and 15 random initial states (stored in <code>random_states.py</code>).</p>
+        <p>3. Implement BFS (1st Week), DFS (2nd Week), and A* (3rd Week) search algorithms (Use straight-line distance as the heuristic function for A*).</p>
+        <p>4. Print the path, total cost.</p>
+        <p>5. Track and print the number of nodes explored for each algorithm during the entire search process (time complexity estimate) and the maximum number of nodes stored in Queue/Stack at any point in time (space complexity estimate).</p>
+        <br>
+        <p class="arrow-bullet">➔ <strong>1. Graph Representation of Indian Cities (road_network in city_map.py):</strong></p>
 
-        <div class="code-card"> "Ahmedabad":[("Vadodara",110),("Rajkot",215),("Udaipur",260),("Indore",400)],
- "Vadodara":[("Ahmedabad",110),("Surat",155),("Indore",390),("Udaipur",330)],
- "Surat":[("Vadodara",155),("Mumbai",285),("Nashik",260)],
- "Mumbai":[("Surat",285),("Nashik",170),("Pune",150)],
- "Pune":[("Mumbai",150),("Nashik",210),("Solapur",250),("Hyderabad",560)],
- 
- "Nashik":[("Mumbai",170),("Surat",260),("Pune",210),("Aurangabad",180),("Indore",420
-)],
- "Aurangabad":[("Nashik",180),("Nagpur",480),("Hyderabad",560),("Indore",410)],
- "Rajkot":[("Ahmedabad",215),("Bhuj",230)],
- "Bhuj":[("Rajkot",230),("Ahmedabad",335)],
- 
- "Udaipur":[("Ahmedabad",260),("Vadodara",330),("Jaipur",395),("Indore",385),("Kota",2
-85)],
- "Jaipur":[("Udaipur",395),("Delhi",280),("Agra",240),("Kota",250)],
- "Delhi":[("Jaipur",280),("Agra",233),("Chandigarh",245),("Lucknow",555)],
- "Agra":[("Delhi",233),("Jaipur",240),("Gwalior",120),("Kanpur",285)],
- "Gwalior":[("Agra",120),("Jhansi",100),("Bhopal",420)],
- "Jhansi":[("Gwalior",100),("Bhopal",330),("Kanpur",220)],
- "Kanpur":[("Agra",285),("Jhansi",220),("Lucknow",90),("Prayagraj",200)],
- "Lucknow":[("Delhi",555),("Kanpur",90),("Prayagraj",200),("Varanasi",315)],
- "Prayagraj":[("Kanpur",200),("Lucknow",200),("Varanasi",125)],
- "Varanasi":[("Prayagraj",125),("Lucknow",315),("Patna",255)],
- "Patna":[("Varanasi",255),("Ranchi",330),("Kolkata",585)],
- "Ranchi":[("Patna",330),("Kolkata",400),("Raipur",560)],
- "Kolkata":[("Patna",585),("Ranchi",400),("Bhubaneswar",440)],
- "Bhubaneswar":[("Kolkata",440),("Visakhapatnam",440),("Raipur",530)],</div>
+        <div class="code-card"><span class="cm"># city_map.py - Indian Cities Road Network Graph</span>
+road_network = {
+    <span class="st">"Ahmedabad"</span>: [(<span class="st">"Vadodara"</span>, <span class="num">110</span>), (<span class="st">"Rajkot"</span>, <span class="num">215</span>), (<span class="st">"Udaipur"</span>, <span class="num">260</span>), (<span class="st">"Indore"</span>, <span class="num">400</span>)],
+    <span class="st">"Vadodara"</span>: [(<span class="st">"Ahmedabad"</span>, <span class="num">110</span>), (<span class="st">"Surat"</span>, <span class="num">155</span>), (<span class="st">"Indore"</span>, <span class="num">390</span>), (<span class="st">"Udaipur"</span>, <span class="num">330</span>)],
+    <span class="st">"Surat"</span>: [(<span class="st">"Vadodara"</span>, <span class="num">155</span>), (<span class="st">"Mumbai"</span>, <span class="num">285</span>), (<span class="st">"Nashik"</span>, <span class="num">260</span>)],
+    <span class="st">"Mumbai"</span>: [(<span class="st">"Surat"</span>, <span class="num">285</span>), (<span class="st">"Nashik"</span>, <span class="num">170</span>), (<span class="st">"Pune"</span>, <span class="num">150</span>)],
+    <span class="st">"Pune"</span>: [(<span class="st">"Mumbai"</span>, <span class="num">150</span>), (<span class="st">"Nashik"</span>, <span class="num">210</span>), (<span class="st">"Solapur"</span>, <span class="num">250</span>), (<span class="st">"Hyderabad"</span>, <span class="num">560</span>)],
+    <span class="st">"Nashik"</span>: [(<span class="st">"Mumbai"</span>, <span class="num">170</span>), (<span class="st">"Surat"</span>, <span class="num">260</span>), (<span class="st">"Pune"</span>, <span class="num">210</span>), (<span class="st">"Aurangabad"</span>, <span class="num">180</span>), (<span class="st">"Indore"</span>, <span class="num">420</span>)],
+    <span class="st">"Aurangabad"</span>: [(<span class="st">"Nashik"</span>, <span class="num">180</span>), (<span class="st">"Nagpur"</span>, <span class="num">480</span>), (<span class="st">"Hyderabad"</span>, <span class="num">560</span>), (<span class="st">"Indore"</span>, <span class="num">410</span>)],
+    <span class="st">"Rajkot"</span>: [(<span class="st">"Ahmedabad"</span>, <span class="num">215</span>), (<span class="st">"Bhuj"</span>, <span class="num">230</span>)],
+    <span class="st">"Bhuj"</span>: [(<span class="st">"Rajkot"</span>, <span class="num">230</span>), (<span class="st">"Ahmedabad"</span>, <span class="num">335</span>)],
+    <span class="st">"Udaipur"</span>: [(<span class="st">"Ahmedabad"</span>, <span class="num">260</span>), (<span class="st">"Vadodara"</span>, <span class="num">330</span>), (<span class="st">"Jaipur"</span>, <span class="num">395</span>), (<span class="st">"Indore"</span>, <span class="num">385</span>), (<span class="st">"Kota"</span>, <span class="num">285</span>)],
+    <span class="st">"Jaipur"</span>: [(<span class="st">"Udaipur"</span>, <span class="num">395</span>), (<span class="st">"Delhi"</span>, <span class="num">280</span>), (<span class="st">"Agra"</span>, <span class="num">240</span>), (<span class="st">"Kota"</span>, <span class="num">250</span>)],
+    <span class="st">"Delhi"</span>: [(<span class="st">"Jaipur"</span>, <span class="num">280</span>), (<span class="st">"Agra"</span>, <span class="num">233</span>), (<span class="st">"Chandigarh"</span>, <span class="num">245</span>), (<span class="st">"Lucknow"</span>, <span class="num">555</span>)],
+    <span class="st">"Agra"</span>: [(<span class="st">"Delhi"</span>, <span class="num">233</span>), (<span class="st">"Jaipur"</span>, <span class="num">240</span>), (<span class="st">"Gwalior"</span>, <span class="num">120</span>), (<span class="st">"Kanpur"</span>, <span class="num">285</span>)],
+    <span class="st">"Gwalior"</span>: [(<span class="st">"Agra"</span>, <span class="num">120</span>), (<span class="st">"Jhansi"</span>, <span class="num">100</span>), (<span class="st">"Bhopal"</span>, <span class="num">420</span>)],
+    <span class="st">"Jhansi"</span>: [(<span class="st">"Gwalior"</span>, <span class="num">100</span>), (<span class="st">"Bhopal"</span>, <span class="num">330</span>), (<span class="st">"Kanpur"</span>, <span class="num">220</span>)],
+    <span class="st">"Kanpur"</span>: [(<span class="st">"Agra"</span>, <span class="num">285</span>), (<span class="st">"Jhansi"</span>, <span class="num">220</span>), (<span class="st">"Lucknow"</span>, <span class="num">90</span>), (<span class="st">"Prayagraj"</span>, <span class="num">200</span>)],
+    <span class="st">"Lucknow"</span>: [(<span class="st">"Delhi"</span>, <span class="num">555</span>), (<span class="st">"Kanpur"</span>, <span class="num">90</span>), (<span class="st">"Prayagraj"</span>, <span class="num">200</span>), (<span class="st">"Varanasi"</span>, <span class="num">315</span>)],
+    <span class="st">"Prayagraj"</span>: [(<span class="st">"Kanpur"</span>, <span class="num">200</span>), (<span class="st">"Lucknow"</span>, <span class="num">200</span>), (<span class="st">"Varanasi"</span>, <span class="num">125</span>)],
+    <span class="st">"Varanasi"</span>: [(<span class="st">"Prayagraj"</span>, <span class="num">125</span>), (<span class="st">"Lucknow"</span>, <span class="num">315</span>), (<span class="st">"Patna"</span>, <span class="num">255</span>)],
+    <span class="st">"Patna"</span>: [(<span class="st">"Varanasi"</span>, <span class="num">255</span>), (<span class="st">"Ranchi"</span>, <span class="num">330</span>), (<span class="st">"Kolkata"</span>, <span class="num">585</span>)],
+    <span class="st">"Ranchi"</span>: [(<span class="st">"Patna"</span>, <span class="num">330</span>), (<span class="st">"Kolkata"</span>, <span class="num">400</span>), (<span class="st">"Raipur"</span>, <span class="num">560</span>)],
+    <span class="st">"Kolkata"</span>: [(<span class="st">"Patna"</span>, <span class="num">585</span>), (<span class="st">"Ranchi"</span>, <span class="num">400</span>), (<span class="st">"Bhubaneswar"</span>, <span class="num">440</span>)],
+    <span class="st">"Bhubaneswar"</span>: [(<span class="st">"Kolkata"</span>, <span class="num">440</span>), (<span class="st">"Visakhapatnam"</span>, <span class="num">440</span>), (<span class="st">"Raipur"</span>, <span class="num">530</span>)],
+    <span class="st">"Visakhapatnam"</span>: [(<span class="st">"Bhubaneswar"</span>, <span class="num">440</span>), (<span class="st">"Vijayawada"</span>, <span class="num">350</span>), (<span class="st">"Hyderabad"</span>, <span class="num">620</span>)],
+    <span class="st">"Vijayawada"</span>: [(<span class="st">"Visakhapatnam"</span>, <span class="num">350</span>), (<span class="st">"Hyderabad"</span>, <span class="num">275</span>), (<span class="st">"Chennai"</span>, <span class="num">450</span>)],
+    <span class="st">"Hyderabad"</span>: [(<span class="st">"Pune"</span>, <span class="num">560</span>), (<span class="st">"Aurangabad"</span>, <span class="num">560</span>), (<span class="st">"Nagpur"</span>, <span class="num">500</span>), (<span class="st">"Vijayawada"</span>, <span class="num">275</span>), (<span class="st">"Bengaluru"</span>, <span class="num">570</span>), (<span class="st">"Chennai"</span>, <span class="num">630</span>), (<span class="st">"Visakhapatnam"</span>, <span class="num">620</span>)],
+    <span class="st">"Nagpur"</span>: [(<span class="st">"Indore"</span>, <span class="num">445</span>), (<span class="st">"Bhopal"</span>, <span class="num">350</span>), (<span class="st">"Aurangabad"</span>, <span class="num">480</span>), (<span class="st">"Hyderabad"</span>, <span class="num">500</span>), (<span class="st">"Raipur"</span>, <span class="num">285</span>)],
+    <span class="st">"Indore"</span>: [(<span class="st">"Ahmedabad"</span>, <span class="num">400</span>), (<span class="st">"Vadodara"</span>, <span class="num">390</span>), (<span class="st">"Udaipur"</span>, <span class="num">385</span>), (<span class="st">"Bhopal"</span>, <span class="num">195</span>), (<span class="st">"Nagpur"</span>, <span class="num">445</span>), (<span class="st">"Nashik"</span>, <span class="num">420</span>), (<span class="st">"Aurangabad"</span>, <span class="num">410</span>)],
+    <span class="st">"Bhopal"</span>: [(<span class="st">"Indore"</span>, <span class="num">195</span>), (<span class="st">"Nagpur"</span>, <span class="num">350</span>), (<span class="st">"Jhansi"</span>, <span class="num">330</span>), (<span class="st">"Gwalior"</span>, <span class="num">420</span>)],
+    <span class="st">"Raipur"</span>: [(<span class="st">"Nagpur"</span>, <span class="num">285</span>), (<span class="st">"Ranchi"</span>, <span class="num">560</span>), (<span class="st">"Bhubaneswar"</span>, <span class="num">530</span>)],
+    <span class="st">"Chandigarh"</span>: [(<span class="st">"Delhi"</span>, <span class="num">245</span>)],
+    <span class="st">"Kota"</span>: [(<span class="st">"Jaipur"</span>, <span class="num">250</span>), (<span class="st">"Udaipur"</span>, <span class="num">285</span>)],
+    <span class="st">"Bengaluru"</span>: [(<span class="st">"Hyderabad"</span>, <span class="num">570</span>), (<span class="st">"Chennai"</span>, <span class="num">345</span>)],
+    <span class="st">"Chennai"</span>: [(<span class="st">"Bengaluru"</span>, <span class="num">345</span>), (<span class="st">"Vijayawada"</span>, <span class="num">450</span>), (<span class="st">"Hyderabad"</span>, <span class="num">630</span>)],
+    <span class="st">"Solapur"</span>: [(<span class="st">"Pune"</span>, <span class="num">250</span>)]
+}</div>
     </div>
     <div class="page-footer">
         <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
-        <span class="footer-right">Page 1 of 22</span>
+        <span class="footer-right">Page 1 of 27</span>
     </div>
 </div>
 
 <!-- ================= PART 1: PAGE 2 ================= -->
 <div class="page">
     <div class="content-body">
-        <div class="code-card"> "Visakhapatnam":[("Bhubaneswar",440),("Vijayawada",350),("Hyderabad",620)],
- "Vijayawada":[("Visakhapatnam",350),("Hyderabad",275),("Chennai",450)],
- 
- "Hyderabad":[("Pune",560),("Aurangabad",560),("Nagpur",500),("Vijayawada",275),("Be
-ngaluru",570),("Chennai",630),("Visakhapatnam",620)],
- 
- "Nagpur":[("Indore",445),("Bhopal",350),("Aurangabad",480),("Hyderabad",500),("Raipu
-r",285)],
- 
- "Indore":[("Ahmedabad",400),("Vadodara",390),("Udaipur",385),("Bhopal",195),("Nagpu
-r",445),("Nashik",420),("Aurangabad",410)],
- "Bhopal":[("Indore",195),("Nagpur",350),("Jhansi",330),("Gwalior",420)],
- "Raipur":[("Nagpur",285),("Ranchi",560),("Bhubaneswar",530)],
- "Chandigarh":[("Delhi",245)],
- "Kota":[("Jaipur",250),("Udaipur",285)],
- "Bengaluru":[("Hyderabad",570),("Chennai",345)],
- "Chennai":[("Bengaluru",345),("Vijayawada",450),("Hyderabad",630)],
- "Solapur":[("Pune",250)]
-}</div>
+        <h1 class="doc-title">2. Random 15 Initial &amp; Final States and Straight-Line Heuristic</h1>
+        <p class="arrow-bullet">➔ As per the lab requirement, 15 random (initial, goal) states are selected and saved in <code>random_states.py</code>:</p>
 
-        <p class="arrow-bullet">➔ Print the path, total cost.</p>
-        <p class="arrow-bullet">➔ Track and print the number of nodes explored for each algorithm during 
-the entire search process (this gives you an estimate of the time 
-complexity) and also track and print the maximum number of nodes 
-stored in the Queue/Stack at any point in time (this gives you an 
-estimate of the space complexity).</p>
-        <br>
-        <h2 class="sec-heading">2. Implement BFS</h2>
+        <table class="data-table">
+            <tr>
+                <th style="width: 8%; text-align:center;">No.</th>
+                <th style="width: 25%;">Initial State (Start City)</th>
+                <th style="width: 25%;">Final State (Goal City)</th>
+                <th style="width: 42%;">Route Description</th>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:bold;">1</td>
+                <td><strong>Chandigarh</strong></td>
+                <td><strong>Ahmedabad</strong></td>
+                <td>Road network route via Indian highway network</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:bold;">2</td>
+                <td><strong>Kota</strong></td>
+                <td><strong>Kanpur</strong></td>
+                <td>Road network route via Indian highway network</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:bold;">3</td>
+                <td><strong>Jhansi</strong></td>
+                <td><strong>Chennai</strong></td>
+                <td>Road network route via Indian highway network</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:bold;">4</td>
+                <td><strong>Bhuj</strong></td>
+                <td><strong>Visakhapatnam</strong></td>
+                <td>Road network route via Indian highway network</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:bold;">5</td>
+                <td><strong>Bhubaneswar</strong></td>
+                <td><strong>Ranchi</strong></td>
+                <td>Road network route via Indian highway network</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:bold;">6</td>
+                <td><strong>Aurangabad</strong></td>
+                <td><strong>Ahmedabad</strong></td>
+                <td>Road network route via Indian highway network</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:bold;">7</td>
+                <td><strong>Bhubaneswar</strong></td>
+                <td><strong>Jaipur</strong></td>
+                <td>Road network route via Indian highway network</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:bold;">8</td>
+                <td><strong>Jhansi</strong></td>
+                <td><strong>Varanasi</strong></td>
+                <td>Road network route via Indian highway network</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:bold;">9</td>
+                <td><strong>Ahmedabad</strong></td>
+                <td><strong>Indore</strong></td>
+                <td>Road network route via Indian highway network</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:bold;">10</td>
+                <td><strong>Visakhapatnam</strong></td>
+                <td><strong>Rajkot</strong></td>
+                <td>Road network route via Indian highway network</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:bold;">11</td>
+                <td><strong>Jhansi</strong></td>
+                <td><strong>Solapur</strong></td>
+                <td>Road network route via Indian highway network</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:bold;">12</td>
+                <td><strong>Kota</strong></td>
+                <td><strong>Agra</strong></td>
+                <td>Road network route via Indian highway network</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:bold;">13</td>
+                <td><strong>Gwalior</strong></td>
+                <td><strong>Ranchi</strong></td>
+                <td>Road network route via Indian highway network</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:bold;">14</td>
+                <td><strong>Nashik</strong></td>
+                <td><strong>Kota</strong></td>
+                <td>Road network route via Indian highway network</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:bold;">15</td>
+                <td><strong>Delhi</strong></td>
+                <td><strong>Jaipur</strong></td>
+                <td>Road network route via Indian highway network</td>
+            </tr>
+        </table>
 
-        <div class="code-card"><span class="kw">from</span> collections <span class="kw">import</span> deque
-<span class="kw">from</span> city_map <span class="kw">import</span> road_network</div>
+        <p class="arrow-bullet">➔ <strong>Straight-Line Distance Heuristic h(n) for A*:</strong></p>
+        <p>Calculated via the Haversine great-circle formula using latitude and longitude coordinates of each Indian city:</p>
+        <div class="code-card"><span class="kw">import</span> math
+
+<span class="kw">def</span> <span class="fn">straight_line_distance</span>(city1, city2):
+    <span class="kw-c">if</span> city1 == city2: <span class="kw-c">return</span> <span class="num">0</span>
+    lat1, lon1 = coordinates[city1]
+    lat2, lon2 = coordinates[city2]
+    R = <span class="num">6371.0</span>  <span class="cm"># Earth radius in km</span>
+    phi1, phi2 = math.radians(lat1), math.radians(lat2)
+    delta_phi, delta_lambda = math.radians(lat2 - lat1), math.radians(lon2 - lon1)
+    a = math.sin(delta_phi / <span class="num">2.0</span>)**<span class="num">2</span> + math.cos(phi1)*math.cos(phi2)*math.sin(delta_lambda / <span class="num">2.0</span>)**<span class="num">2</span>
+    c = <span class="num">2</span> * math.atan2(math.sqrt(a), math.sqrt(<span class="num">1</span> - a))
+    <span class="kw-c">return</span> int(round(R * c))</div>
     </div>
     <div class="page-footer">
         <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
-        <span class="footer-right">Page 2 of 22</span>
+        <span class="footer-right">Page 2 of 27</span>
     </div>
 </div>
 
 <!-- ================= PART 1: PAGE 3 ================= -->
 <div class="page">
     <div class="content-body">
-        <div class="code-card"><span class="kw">def</span> <span class="fn">calculate_cost</span>(route):
+        <h1 class="doc-title">3. Implement BFS (Breadth-First Search)</h1>
+        <p class="arrow-bullet">➔ BFS uses a FIFO queue to explore nodes level-by-level, guaranteeing the path with fewest hops.</p>
+        <br>
+        <div class="code-card"><span class="cm"># breadth_first.py</span>
+<span class="kw">from</span> collections <span class="kw">import</span> deque
+<span class="kw">from</span> city_map <span class="kw">import</span> road_network
+<span class="kw">from</span> random_states <span class="kw">import</span> test_pairs
+
+<span class="kw">def</span> <span class="fn">calculate_cost</span>(route):
     total_dist = <span class="num">0</span>
     <span class="kw-c">for</span> k <span class="kw-c">in</span> range(len(route) - <span class="num">1</span>):
         <span class="kw-c">for</span> adj_city, dist <span class="kw-c">in</span> road_network[route[k]]:
@@ -417,7 +525,7 @@ estimate of the space complexity).</p>
                 <span class="kw-c">break</span>
     <span class="kw">return</span> total_dist
 
-<span class="kw">def</span> <span class="fn">bfs</span>(source, destination):
+<span class="kw">def</span> <span class="fn">bfs</span>(source, destination, verbose=<span class="kw-c">True</span>):
     frontier = deque([[source]])
     explored = set()
     nodes_explored = <span class="num">0</span>
@@ -428,11 +536,13 @@ estimate of the space complexity).</p>
         current_node = route[-<span class="num">1</span>]
 
         <span class="kw-c">if</span> current_node == destination:
-            print(<span class="st">"Path :"</span>, <span class="st">" -&gt; "</span>.join(route))
-            print(<span class="st">"Cost :"</span>, calculate_cost(route))
-            print(<span class="st">"Nodes Explored (Time Complexity) :"</span>, nodes_explored)
-            print(<span class="st">"Max Nodes Stored (Space Complexity) :"</span>, max_stored)
-            <span class="kw">return</span>
+            cost = calculate_cost(route)
+            <span class="kw-c">if</span> verbose:
+                print(<span class="st">"Path :"</span>, <span class="st">" -&gt; "</span>.join(route))
+                print(<span class="st">"Cost :"</span>, cost)
+                print(<span class="st">"Nodes Explored (Time Complexity) :"</span>, nodes_explored)
+                print(<span class="st">"Max Nodes Stored (Space Complexity) :"</span>, max_stored)
+            <span class="kw">return</span> route, cost, nodes_explored, max_stored
 
         <span class="kw-c">if</span> current_node <span class="kw-c">not in</span> explored:
             explored.add(current_node)
@@ -445,23 +555,28 @@ estimate of the space complexity).</p>
             <span class="kw-c">if</span> len(frontier) &gt; max_stored:
                 max_stored = len(frontier)
 
-source = input(<span class="st">"Start City : "</span>)
-destination = input(<span class="st">"Goal City : "</span>)
+    <span class="kw">return</span> <span class="kw-c">None</span>, <span class="num">0</span>, nodes_explored, max_stored
 
-bfs(source, destination)</div>
+<span class="kw-c">if</span> __name__ == <span class="st">"__main__"</span>:
+    print(<span class="st">"="</span> * <span class="num">70</span>)
+    print(<span class="st">" BREADTH FIRST SEARCH (BFS) - 15 RANDOM INITIAL &amp; FINAL STATES"</span>)
+    print(<span class="st">"="</span> * <span class="num">70</span>)
+    <span class="kw-c">for</span> idx, (source, destination) <span class="kw-c">in</span> enumerate(test_pairs, <span class="num">1</span>):
+        print(f<span class="st">"
+[Case {idx}] Start: {source} | Goal: {destination}"</span>)
+        bfs(source, destination)</div>
     </div>
     <div class="page-footer">
         <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
-        <span class="footer-right">Page 3 of 22</span>
+        <span class="footer-right">Page 3 of 27</span>
     </div>
 </div>
 
 <!-- ================= PART 1: PAGE 4 ================= -->
 <div class="page">
     <div class="content-body">
-        <p><strong>Output :</strong></p>
-
-        <!-- Terminal 1: Ahmedabad -> Chennai -->
+        <h1 class="doc-title">BFS Outputs : 15 Random State Runs (Part 1 - Cases 1 to 8)</h1>
+        <p><strong>Terminal Screenshot Card :</strong></p>
         <div class="terminal-card">
             <div class="terminal-tabs">
                 <span>Problems</span>
@@ -471,16 +586,70 @@ bfs(source, destination)</div>
                 <span>Ports</span>
             </div>
             <div class="terminal-body"><span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cmd">python .\breadth_first.py</span>
-Start City : Ahmedabad
-Goal City : Chennai
-Path : Ahmedabad -&gt; Indore -&gt; Nagpur -&gt; Hyderabad -&gt; Chennai
-Cost : 1975
-Nodes Explored (Time Complexity) : 26
+======================================================================
+ BREADTH FIRST SEARCH (BFS) - 15 RANDOM RUNS
+======================================================================
+
+[Case 1] Start: Chandigarh | Goal: Ahmedabad
+Path : Chandigarh -> Delhi -> Jaipur -> Udaipur -> Ahmedabad
+Cost : 1180
+Nodes Explored (Time Complexity) : 11
+Max Nodes Stored (Space Complexity) : 20
+
+[Case 2] Start: Kota | Goal: Kanpur
+Path : Kota -> Jaipur -> Agra -> Kanpur
+Cost : 775
+Nodes Explored (Time Complexity) : 11
+Max Nodes Stored (Space Complexity) : 24
+
+[Case 3] Start: Jhansi | Goal: Chennai
+Path : Jhansi -> Bhopal -> Nagpur -> Hyderabad -> Chennai
+Cost : 1810
+Nodes Explored (Time Complexity) : 27
+Max Nodes Stored (Space Complexity) : 47
+
+[Case 4] Start: Bhuj | Goal: Visakhapatnam
+Path : Bhuj -> Ahmedabad -> Indore -> Nagpur -> Hyderabad -> Visakhapatnam
+Cost : 2300
+Nodes Explored (Time Complexity) : 27
 Max Nodes Stored (Space Complexity) : 37
-<span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cursor">&nbsp;</span></div>
-        </div>
 
-        <!-- Terminal 2: Mumbai -> Delhi -->
+[Case 5] Start: Bhubaneswar | Goal: Ranchi
+Path : Bhubaneswar -> Kolkata -> Ranchi
+Cost : 840
+Nodes Explored (Time Complexity) : 5
+Max Nodes Stored (Space Complexity) : 11
+
+[Case 6] Start: Aurangabad | Goal: Ahmedabad
+Path : Aurangabad -> Indore -> Ahmedabad
+Cost : 810
+Nodes Explored (Time Complexity) : 14
+Max Nodes Stored (Space Complexity) : 35
+
+[Case 7] Start: Bhubaneswar | Goal: Jaipur
+Path : Bhubaneswar -> Raipur -> Nagpur -> Indore -> Udaipur -> Jaipur
+Cost : 2040
+Nodes Explored (Time Complexity) : 30
+Max Nodes Stored (Space Complexity) : 39
+
+[Case 8] Start: Jhansi | Goal: Varanasi
+Path : Jhansi -> Kanpur -> Lucknow -> Varanasi
+Cost : 625
+Nodes Explored (Time Complexity) : 18
+Max Nodes Stored (Space Complexity) : 47</div>
+        </div>
+    </div>
+    <div class="page-footer">
+        <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
+        <span class="footer-right">Page 4 of 27</span>
+    </div>
+</div>
+
+<!-- ================= PART 1: PAGE 5 ================= -->
+<div class="page">
+    <div class="content-body">
+        <h1 class="doc-title">BFS Outputs : 15 Random State Runs (Part 2 - Cases 9 to 15)</h1>
+        <p><strong>Terminal Screenshot Card (Continued) :</strong></p>
         <div class="terminal-card">
             <div class="terminal-tabs">
                 <span>Problems</span>
@@ -489,20 +658,68 @@ Max Nodes Stored (Space Complexity) : 37
                 <span class="terminal-tab-active">Terminal</span>
                 <span>Ports</span>
             </div>
-            <div class="terminal-body"><span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cmd">python .\breadth_first.py</span>
-Start City : Mumbai
-Goal City : Delhi
-Path : Mumbai -&gt; Surat -&gt; Vadodara -&gt; Udaipur -&gt; Jaipur -&gt; Delhi
-Cost : 1445
-Nodes Explored (Time Complexity) : 25
+            <div class="terminal-body">
+[Case 9] Start: Ahmedabad | Goal: Indore
+Path : Ahmedabad -> Indore
+Cost : 400
+Nodes Explored (Time Complexity) : 4
+Max Nodes Stored (Space Complexity) : 12
+
+[Case 10] Start: Visakhapatnam | Goal: Rajkot
+Path : Visakhapatnam -> Hyderabad -> Aurangabad -> Indore -> Ahmedabad -> Rajkot
+Cost : 2205
+Nodes Explored (Time Complexity) : 27
 Max Nodes Stored (Space Complexity) : 31
+
+[Case 11] Start: Jhansi | Goal: Solapur
+Path : Jhansi -> Bhopal -> Indore -> Nashik -> Pune -> Solapur
+Cost : 1405
+Nodes Explored (Time Complexity) : 33
+Max Nodes Stored (Space Complexity) : 47
+
+[Case 12] Start: Kota | Goal: Agra
+Path : Kota -> Jaipur -> Agra
+Cost : 490
+Nodes Explored (Time Complexity) : 4
+Max Nodes Stored (Space Complexity) : 11
+
+[Case 13] Start: Gwalior | Goal: Ranchi
+Path : Gwalior -> Bhopal -> Nagpur -> Raipur -> Ranchi
+Cost : 1615
+Nodes Explored (Time Complexity) : 29
+Max Nodes Stored (Space Complexity) : 42
+
+[Case 14] Start: Nashik | Goal: Kota
+Path : Nashik -> Indore -> Udaipur -> Kota
+Cost : 1090
+Nodes Explored (Time Complexity) : 20
+Max Nodes Stored (Space Complexity) : 33
+
+[Case 15] Start: Delhi | Goal: Jaipur
+Path : Delhi -> Jaipur
+Cost : 280
+Nodes Explored (Time Complexity) : 1
+Max Nodes Stored (Space Complexity) : 4
+
 <span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cursor">&nbsp;</span></div>
         </div>
+    </div>
+    <div class="page-footer">
+        <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
+        <span class="footer-right">Page 5 of 27</span>
+    </div>
+</div>
 
-        <h2 class="sec-heading">3. Implement DFS</h2>
-
-        <div class="code-card"><span class="kw">from</span> collections <span class="kw">import</span> deque
+<!-- ================= PART 1: PAGE 6 ================= -->
+<div class="page">
+    <div class="content-body">
+        <h1 class="doc-title">4. Implement DFS (Depth-First Search)</h1>
+        <p class="arrow-bullet">➔ DFS uses a LIFO stack (or recursion) to explore as deep as possible before backtracking.</p>
+        <br>
+        <div class="code-card"><span class="cm"># depth_first.py</span>
+<span class="kw">from</span> collections <span class="kw">import</span> deque
 <span class="kw">from</span> city_map <span class="kw">import</span> road_network
+<span class="kw">from</span> random_states <span class="kw">import</span> test_pairs
 
 <span class="kw">def</span> <span class="fn">calculate_cost</span>(route):
     total_dist = <span class="num">0</span>
@@ -511,33 +728,26 @@ Max Nodes Stored (Space Complexity) : 31
             <span class="kw-c">if</span> adj_city == route[k + <span class="num">1</span>]:
                 total_dist += dist
                 <span class="kw-c">break</span>
-    <span class="kw">return</span> total_dist</div>
-    </div>
-    <div class="page-footer">
-        <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
-        <span class="footer-right">Page 4 of 22</span>
-    </div>
-</div>
+    <span class="kw">return</span> total_dist
 
-<!-- ================= PART 1: PAGE 5 ================= -->
-<div class="page">
-    <div class="content-body">
-        <div class="code-card"><span class="kw">def</span> <span class="fn">dfs</span>(source, destination):
+<span class="kw">def</span> <span class="fn">dfs</span>(source, destination, verbose=<span class="kw-c">True</span>):
     frontier = deque([[source]])
     explored = set()
     nodes_explored = <span class="num">0</span>
     max_stored = len(frontier)
 
     <span class="kw-c">while</span> frontier:
-        route = frontier.pop()   <span class="cm"># LIFO stack behavior for Depth-First Search</span>
+        route = frontier.pop()   <span class="cm"># LIFO Stack behavior for Depth-First Search</span>
         current_node = route[-<span class="num">1</span>]
 
         <span class="kw-c">if</span> current_node == destination:
-            print(<span class="st">"Path :"</span>, <span class="st">" -&gt; "</span>.join(route))
-            print(<span class="st">"Cost :"</span>, calculate_cost(route))
-            print(<span class="st">"Nodes Explored (Time Complexity) :"</span>, nodes_explored)
-            print(<span class="st">"Max Nodes Stored (Space Complexity) :"</span>, max_stored)
-            <span class="kw">return</span>
+            cost = calculate_cost(route)
+            <span class="kw-c">if</span> verbose:
+                print(<span class="st">"Path :"</span>, <span class="st">" -&gt; "</span>.join(route))
+                print(<span class="st">"Cost :"</span>, cost)
+                print(<span class="st">"Nodes Explored (Time Complexity) :"</span>, nodes_explored)
+                print(<span class="st">"Max Nodes Stored (Space Complexity) :"</span>, max_stored)
+            <span class="kw">return</span> route, cost, nodes_explored, max_stored
 
         <span class="kw-c">if</span> current_node <span class="kw-c">not in</span> explored:
             explored.add(current_node)
@@ -550,15 +760,28 @@ Max Nodes Stored (Space Complexity) : 31
             <span class="kw-c">if</span> len(frontier) &gt; max_stored:
                 max_stored = len(frontier)
 
-source = input(<span class="st">"Start City : "</span>)
-destination = input(<span class="st">"Goal City : "</span>)
+    <span class="kw">return</span> <span class="kw-c">None</span>, <span class="num">0</span>, nodes_explored, max_stored
 
-dfs(source, destination)</div>
+<span class="kw-c">if</span> __name__ == <span class="st">"__main__"</span>:
+    print(<span class="st">"="</span> * <span class="num">70</span>)
+    print(<span class="st">" DEPTH FIRST SEARCH (DFS) - 15 RANDOM INITIAL &amp; FINAL STATES"</span>)
+    print(<span class="st">"="</span> * <span class="num">70</span>)
+    <span class="kw-c">for</span> idx, (source, destination) <span class="kw-c">in</span> enumerate(test_pairs, <span class="num">1</span>):
+        print(f<span class="st">"
+[Case {idx}] Start: {source} | Goal: {destination}"</span>)
+        dfs(source, destination)</div>
+    </div>
+    <div class="page-footer">
+        <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
+        <span class="footer-right">Page 6 of 27</span>
+    </div>
+</div>
 
-        <p>4.</p>
-        <p><strong>Output :</strong></p>
-
-        <!-- Terminal 1: Ahmedabad -> Chennai -->
+<!-- ================= PART 1: PAGE 7 ================= -->
+<div class="page">
+    <div class="content-body">
+        <h1 class="doc-title">DFS Outputs : 15 Random State Runs (Part 1 - Cases 1 to 8)</h1>
+        <p><strong>Terminal Screenshot Card :</strong></p>
         <div class="terminal-card">
             <div class="terminal-tabs">
                 <span>Problems</span>
@@ -568,55 +791,156 @@ dfs(source, destination)</div>
                 <span>Ports</span>
             </div>
             <div class="terminal-body"><span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cmd">python .\depth_first.py</span>
-Start City : Ahmedabad
-Goal City : Chennai
-Path : Ahmedabad -&gt; Indore -&gt; Aurangabad -&gt; Hyderabad -&gt; Visakhapatnam -&gt; Vijayawada -&gt; Chennai
-Cost : 2790
-Nodes Explored (Time Complexity) : 6
-Max Nodes Stored (Space Complexity) : 21
+======================================================================
+ DEPTH FIRST SEARCH (DFS) - 15 RANDOM RUNS
+======================================================================
+
+[Case 1] Start: Chandigarh | Goal: Ahmedabad
+Path : Chandigarh -> Delhi -> Lucknow -> Varanasi -> Patna -> Kolkata -> Bhubaneswar -> Raipur -> Nagpur -> Hyderabad -> Aurangabad -> Indore -> Nashik -> Pune -> Mumbai -> Surat -> Vadodara -> Udaipur -> Ahmedabad
+Cost : 6490
+Nodes Explored (Time Complexity) : 32
+Max Nodes Stored (Space Complexity) : 48
+
+[Case 2] Start: Kota | Goal: Kanpur
+Path : Kota -> Udaipur -> Indore -> Aurangabad -> Hyderabad -> Visakhapatnam -> Bhubaneswar -> Raipur -> Ranchi -> Kolkata -> Patna -> Varanasi -> Lucknow -> Prayagraj -> Kanpur
+Cost : 5745
+Nodes Explored (Time Complexity) : 17
+Max Nodes Stored (Space Complexity) : 28
+
+[Case 3] Start: Jhansi | Goal: Chennai
+Path : Jhansi -> Kanpur -> Prayagraj -> Varanasi -> Patna -> Kolkata -> Bhubaneswar -> Raipur -> Nagpur -> Hyderabad -> Visakhapatnam -> Vijayawada -> Chennai
+Cost : 4560
+Nodes Explored (Time Complexity) : 13
+Max Nodes Stored (Space Complexity) : 28
+
+[Case 4] Start: Bhuj | Goal: Visakhapatnam
+Path : Bhuj -> Ahmedabad -> Indore -> Aurangabad -> Hyderabad -> Visakhapatnam
+Cost : 2325
+Nodes Explored (Time Complexity) : 5
+Max Nodes Stored (Space Complexity) : 19
+
+[Case 5] Start: Bhubaneswar | Goal: Ranchi
+Path : Bhubaneswar -> Raipur -> Ranchi
+Cost : 1090
+Nodes Explored (Time Complexity) : 2
+Max Nodes Stored (Space Complexity) : 5
+
+[Case 6] Start: Aurangabad | Goal: Ahmedabad
+Path : Aurangabad -> Indore -> Nashik -> Pune -> Hyderabad -> Visakhapatnam -> Bhubaneswar -> Raipur -> Ranchi -> Kolkata -> Patna -> Varanasi -> Lucknow -> Prayagraj -> Kanpur -> Jhansi -> Bhopal -> Gwalior -> Agra -> Jaipur -> Kota -> Udaipur -> Vadodara -> Ahmedabad
+Cost : 8010
+Nodes Explored (Time Complexity) : 28
+Max Nodes Stored (Space Complexity) : 42
+
+[Case 7] Start: Bhubaneswar | Goal: Jaipur
+Path : Bhubaneswar -> Raipur -> Ranchi -> Kolkata -> Patna -> Varanasi -> Lucknow -> Prayagraj -> Kanpur -> Jhansi -> Bhopal -> Gwalior -> Agra -> Jaipur
+Cost : 4375
+Nodes Explored (Time Complexity) : 13
+Max Nodes Stored (Space Complexity) : 16
+
+[Case 8] Start: Jhansi | Goal: Varanasi
+Path : Jhansi -> Kanpur -> Prayagraj -> Varanasi
+Cost : 545
+Nodes Explored (Time Complexity) : 3
+Max Nodes Stored (Space Complexity) : 8</div>
+        </div>
+    </div>
+    <div class="page-footer">
+        <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
+        <span class="footer-right">Page 7 of 27</span>
+    </div>
+</div>
+
+<!-- ================= PART 1: PAGE 8 ================= -->
+<div class="page">
+    <div class="content-body">
+        <h1 class="doc-title">DFS Outputs : 15 Random State Runs (Part 2 - Cases 9 to 15)</h1>
+        <p><strong>Terminal Screenshot Card (Continued) :</strong></p>
+        <div class="terminal-card">
+            <div class="terminal-tabs">
+                <span>Problems</span>
+                <span>Output</span>
+                <span>Debug Console</span>
+                <span class="terminal-tab-active">Terminal</span>
+                <span>Ports</span>
+            </div>
+            <div class="terminal-body">
+[Case 9] Start: Ahmedabad | Goal: Indore
+Path : Ahmedabad -> Indore
+Cost : 400
+Nodes Explored (Time Complexity) : 1
+Max Nodes Stored (Space Complexity) : 4
+
+[Case 10] Start: Visakhapatnam | Goal: Rajkot
+Path : Visakhapatnam -> Hyderabad -> Nagpur -> Raipur -> Bhubaneswar -> Kolkata -> Ranchi -> Patna -> Varanasi -> Lucknow -> Prayagraj -> Kanpur -> Jhansi -> Bhopal -> Gwalior -> Agra -> Jaipur -> Kota -> Udaipur -> Indore -> Aurangabad -> Nashik -> Pune -> Mumbai -> Surat -> Vadodara -> Ahmedabad -> Rajkot
+Cost : 8040
+Nodes Explored (Time Complexity) : 31
+Max Nodes Stored (Space Complexity) : 39
+
+[Case 11] Start: Jhansi | Goal: Solapur
+Path : Jhansi -> Kanpur -> Prayagraj -> Varanasi -> Patna -> Kolkata -> Bhubaneswar -> Raipur -> Nagpur -> Hyderabad -> Aurangabad -> Indore -> Nashik -> Pune -> Solapur
+Cost : 4990
+Nodes Explored (Time Complexity) : 19
+Max Nodes Stored (Space Complexity) : 33
+
+[Case 12] Start: Kota | Goal: Agra
+Path : Kota -> Udaipur -> Indore -> Aurangabad -> Hyderabad -> Visakhapatnam -> Bhubaneswar -> Raipur -> Ranchi -> Kolkata -> Patna -> Varanasi -> Lucknow -> Prayagraj -> Kanpur -> Jhansi -> Bhopal -> Gwalior -> Agra
+Cost : 6835
+Nodes Explored (Time Complexity) : 21
+Max Nodes Stored (Space Complexity) : 33
+
+[Case 13] Start: Gwalior | Goal: Ranchi
+Path : Gwalior -> Bhopal -> Jhansi -> Kanpur -> Prayagraj -> Varanasi -> Patna -> Kolkata -> Bhubaneswar -> Raipur -> Ranchi
+Cost : 3665
+Nodes Explored (Time Complexity) : 10
+Max Nodes Stored (Space Complexity) : 22
+
+[Case 14] Start: Nashik | Goal: Kota
+Path : Nashik -> Indore -> Aurangabad -> Hyderabad -> Visakhapatnam -> Bhubaneswar -> Raipur -> Ranchi -> Kolkata -> Patna -> Varanasi -> Lucknow -> Prayagraj -> Kanpur -> Jhansi -> Bhopal -> Gwalior -> Agra -> Jaipur -> Kota
+Cost : 7075
+Nodes Explored (Time Complexity) : 22
+Max Nodes Stored (Space Complexity) : 35
+
+[Case 15] Start: Delhi | Goal: Jaipur
+Path : Delhi -> Lucknow -> Varanasi -> Patna -> Kolkata -> Bhubaneswar -> Raipur -> Nagpur -> Hyderabad -> Aurangabad -> Indore -> Nashik -> Pune -> Mumbai -> Surat -> Vadodara -> Udaipur -> Kota -> Jaipur
+Cost : 6520
+Nodes Explored (Time Complexity) : 24
+Max Nodes Stored (Space Complexity) : 37
+
 <span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cursor">&nbsp;</span></div>
         </div>
     </div>
     <div class="page-footer">
         <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
-        <span class="footer-right">Page 5 of 22</span>
+        <span class="footer-right">Page 8 of 27</span>
     </div>
 </div>
 
-<!-- ================= PART 1: PAGE 6 ================= -->
+<!-- ================= PART 1: PAGE 9 ================= -->
 <div class="page">
     <div class="content-body">
-        <!-- Terminal 2: Mumbai -> Delhi -->
-        <div class="terminal-card">
-            <div class="terminal-tabs">
-                <span>Problems</span>
-                <span>Output</span>
-                <span>Debug Console</span>
-                <span class="terminal-tab-active">Terminal</span>
-                <span>Ports</span>
-            </div>
-            <div class="terminal-body"><span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cmd">python .\depth_first.py</span>
-Start City : Mumbai
-Goal City : Delhi
-Path : Mumbai -&gt; Pune -&gt; Hyderabad -&gt; Visakhapatnam -&gt; Bhubaneswar -&gt; Raipur -&gt; Ranchi -&gt; Kolkata -&gt; Patna -&gt; Varanasi -&gt; Lucknow -&gt; Prayagraj -&gt; Kanpur -&gt; Jhansi -&gt; Bhopal -&gt; Gwalior -&gt; Agra -&gt; Jaipur -&gt; Delhi
-Cost : 6425
-Nodes Explored (Time Complexity) : 32
-Max Nodes Stored (Space Complexity) : 43
-<span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cursor">&nbsp;</span></div>
-        </div>
+        <h1 class="doc-title">5. Implement A* Search Algorithm</h1>
+        <p class="arrow-bullet">➔ A* evaluates f(n) = g(n) + h(n), combining path cost g(n) and straight-line heuristic h(n).</p>
+        <br>
+        <div class="code-card"><span class="cm"># astar_search.py</span>
+<span class="kw">import</span> heapq
+<span class="kw">from</span> cities <span class="kw">import</span> graph, straight_line_distance
+<span class="kw">from</span> random_states <span class="kw">import</span> test_pairs
 
-        <h2 class="sec-heading">5. A* Search</h2>
+<span class="kw">def</span> <span class="fn">find_cost</span>(path):
+    total = <span class="num">0</span>
+    <span class="kw-c">for</span> i <span class="kw-c">in</span> range(len(path) - <span class="num">1</span>):
+        <span class="kw-c">if</span> path[i] <span class="kw-c">in</span> graph:
+            <span class="kw-c">for</span> neighbour, cost <span class="kw-c">in</span> graph[path[i]]:
+                <span class="kw-c">if</span> neighbour == path[i + <span class="num">1</span>]:
+                    total += cost
+                    <span class="kw-c">break</span>
+    <span class="kw">return</span> total
 
-        <div class="code-card"><span class="kw">import</span> heapq
-<span class="kw">from</span> cities <span class="kw">import</span> graph
-
-<span class="cm"># Straight-line distance / heuristic values</span>
-heuristics = {}
-
-<span class="kw">def</span> <span class="fn">a_star</span>(start, goal):
-    <span class="cm"># Queue stores tuples of (f_cost, g_cost, path)</span>
-    <span class="cm"># f_cost = g_cost + h_cost</span>
-    queue = [(<span class="num">0</span>, <span class="num">0</span>, [start])]
+<span class="kw">def</span> <span class="fn">a_star</span>(start, goal, verbose=<span class="kw-c">True</span>):
+    <span class="cm"># Priority Queue stores tuples of (f_cost, g_cost, path)</span>
+    <span class="cm"># f_cost = g_cost + h_cost (where h_cost is straight-line distance to goal)</span>
+    h_start = straight_line_distance(start, goal)
+    queue = [(h_start, <span class="num">0</span>, [start])]
     visited = []
     nodes_explored = <span class="num">0</span>
     max_stored = len(queue)
@@ -626,54 +950,52 @@ heuristics = {}
         city = path[-<span class="num">1</span>]
 
         <span class="kw-c">if</span> city == goal:
-            print(<span class="st">"Path :"</span>, <span class="st">" -&gt; "</span>.join(path))
-            print(<span class="st">"Cost :"</span>, find_cost(path))
-            print(<span class="st">"Nodes Explored (Time Complexity) :"</span>, nodes_explored)
-            print(<span class="st">"Max Nodes Stored (Space Complexity) :"</span>, max_stored)
-            <span class="kw">return</span>
+            cost = find_cost(path)
+            <span class="kw-c">if</span> verbose:
+                print(<span class="st">"Path :"</span>, <span class="st">" -&gt; "</span>.join(path))
+                print(<span class="st">"Cost :"</span>, cost)
+                print(<span class="st">"Nodes Explored (Time Complexity) :"</span>, nodes_explored)
+                print(<span class="st">"Max Nodes Stored (Space Complexity) :"</span>, max_stored)
+            <span class="kw">return</span> path, cost, nodes_explored, max_stored
 
         <span class="kw-c">if</span> city <span class="kw-c">not in</span> visited:
             visited.append(city)
             nodes_explored += <span class="num">1</span>
 
             <span class="kw-c">if</span> city <span class="kw-c">in</span> graph:
-                <span class="kw-c">for</span> neighbour, cost <span class="kw-c">in</span> graph[city]:
+                <span class="kw-c">for</span> neighbour, step_cost <span class="kw-c">in</span> graph[city]:
                     new_path = list(path)
                     new_path.append(neighbour)
-                    new_g_cost = g_cost + cost
-                    h_cost = heuristics.get(neighbour, <span class="num">0</span>)
+                    new_g_cost = g_cost + step_cost
+                    h_cost = straight_line_distance(neighbour, goal)
                     new_f_cost = new_g_cost + h_cost
                     heapq.heappush(queue, (new_f_cost, new_g_cost, new_path))
 
             <span class="kw-c">if</span> len(queue) &gt; max_stored:
-                max_stored = len(queue)</div>
+                max_stored = len(queue)
+
+    <span class="kw">return</span> <span class="kw-c">None</span>, <span class="num">0</span>, nodes_explored, max_stored
+
+<span class="kw-c">if</span> __name__ == <span class="st">"__main__"</span>:
+    print(<span class="st">"="</span> * <span class="num">70</span>)
+    print(<span class="st">" A* SEARCH ALGORITHM - 15 RANDOM INITIAL &amp; FINAL STATES"</span>)
+    print(<span class="st">"="</span> * <span class="num">70</span>)
+    <span class="kw-c">for</span> idx, (start, goal) <span class="kw-c">in</span> enumerate(test_pairs, <span class="num">1</span>):
+        print(f<span class="st">"
+[Case {idx}] Start: {start} | Goal: {goal}"</span>)
+        a_star(start, goal)</div>
     </div>
     <div class="page-footer">
         <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
-        <span class="footer-right">Page 6 of 22</span>
+        <span class="footer-right">Page 9 of 27</span>
     </div>
 </div>
 
-<!-- ================= PART 1: PAGE 7 ================= -->
+<!-- ================= PART 1: PAGE 10 ================= -->
 <div class="page">
     <div class="content-body">
-        <div class="code-card"><span class="kw">def</span> <span class="fn">find_cost</span>(path):
-    total = <span class="num">0</span>
-    <span class="kw-c">for</span> i <span class="kw-c">in</span> range(len(path) - <span class="num">1</span>):
-        <span class="kw-c">if</span> path[i] <span class="kw-c">in</span> graph:
-            <span class="kw-c">for</span> neighbour, cost <span class="kw-c">in</span> graph[path[i]]:
-                <span class="kw-c">if</span> neighbour == path[i + <span class="num">1</span>]:
-                    total += cost
-    <span class="kw">return</span> total
-
-start = input(<span class="st">"Start City : "</span>)
-goal = input(<span class="st">"Goal City : "</span>)
-
-a_star(start, goal)</div>
-
-        <p><strong>Output :</strong></p>
-
-        <!-- Terminal 1: Ahmedabad -> Chennai -->
+        <h1 class="doc-title">A* Search Outputs : 15 Random State Runs (Part 1 - Cases 1 to 8)</h1>
+        <p><strong>Terminal Screenshot Card :</strong></p>
         <div class="terminal-card">
             <div class="terminal-tabs">
                 <span>Problems</span>
@@ -683,16 +1005,70 @@ a_star(start, goal)</div>
                 <span>Ports</span>
             </div>
             <div class="terminal-body"><span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cmd">python .\astar_search.py</span>
-Start City : Ahmedabad
-Goal City : Chennai
-Path : Ahmedabad -&gt; Vadodara -&gt; Surat -&gt; Mumbai -&gt; Pune -&gt; Hyderabad -&gt; Chennai
-Cost : 1890
-Nodes Explored (Time Complexity) : 33
+======================================================================
+ A* SEARCH ALGORITHM - 15 RANDOM RUNS
+======================================================================
+
+[Case 1] Start: Chandigarh | Goal: Ahmedabad
+Path : Chandigarh -> Delhi -> Jaipur -> Udaipur -> Ahmedabad
+Cost : 1180
+Nodes Explored (Time Complexity) : 4
+Max Nodes Stored (Space Complexity) : 11
+
+[Case 2] Start: Kota | Goal: Kanpur
+Path : Kota -> Jaipur -> Agra -> Kanpur
+Cost : 775
+Nodes Explored (Time Complexity) : 3
+Max Nodes Stored (Space Complexity) : 8
+
+[Case 3] Start: Jhansi | Goal: Chennai
+Path : Jhansi -> Bhopal -> Nagpur -> Hyderabad -> Chennai
+Cost : 1810
+Nodes Explored (Time Complexity) : 9
 Max Nodes Stored (Space Complexity) : 30
-<span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cursor">&nbsp;</span></div>
-        </div>
 
-        <!-- Terminal 2: Mumbai -> Delhi -->
+[Case 4] Start: Bhuj | Goal: Visakhapatnam
+Path : Bhuj -> Ahmedabad -> Vadodara -> Surat -> Mumbai -> Pune -> Hyderabad -> Visakhapatnam
+Cost : 2215
+Nodes Explored (Time Complexity) : 18
+Max Nodes Stored (Space Complexity) : 35
+
+[Case 5] Start: Bhubaneswar | Goal: Ranchi
+Path : Bhubaneswar -> Kolkata -> Ranchi
+Cost : 840
+Nodes Explored (Time Complexity) : 2
+Max Nodes Stored (Space Complexity) : 5
+
+[Case 6] Start: Aurangabad | Goal: Ahmedabad
+Path : Aurangabad -> Nashik -> Surat -> Vadodara -> Ahmedabad
+Cost : 705
+Nodes Explored (Time Complexity) : 4
+Max Nodes Stored (Space Complexity) : 13
+
+[Case 7] Start: Bhubaneswar | Goal: Jaipur
+Path : Bhubaneswar -> Raipur -> Nagpur -> Bhopal -> Gwalior -> Agra -> Jaipur
+Cost : 1945
+Nodes Explored (Time Complexity) : 11
+Max Nodes Stored (Space Complexity) : 28
+
+[Case 8] Start: Jhansi | Goal: Varanasi
+Path : Jhansi -> Kanpur -> Prayagraj -> Varanasi
+Cost : 545
+Nodes Explored (Time Complexity) : 3
+Max Nodes Stored (Space Complexity) : 8</div>
+        </div>
+    </div>
+    <div class="page-footer">
+        <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
+        <span class="footer-right">Page 10 of 27</span>
+    </div>
+</div>
+
+<!-- ================= PART 1: PAGE 11 ================= -->
+<div class="page">
+    <div class="content-body">
+        <h1 class="doc-title">A* Search Outputs : 15 Random State Runs (Part 2 - Cases 9 to 15)</h1>
+        <p><strong>Terminal Screenshot Card (Continued) :</strong></p>
         <div class="terminal-card">
             <div class="terminal-tabs">
                 <span>Problems</span>
@@ -701,23 +1077,304 @@ Max Nodes Stored (Space Complexity) : 30
                 <span class="terminal-tab-active">Terminal</span>
                 <span>Ports</span>
             </div>
-            <div class="terminal-body"><span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cmd">python .\astar_search.py</span>
-Start City : Mumbai
-Goal City : Delhi
-Path : Mumbai -&gt; Surat -&gt; Vadodara -&gt; Udaipur -&gt; Jaipur -&gt; Delhi
-Cost : 1445
-Nodes Explored (Time Complexity) : 27
-Max Nodes Stored (Space Complexity) : 32
+            <div class="terminal-body">
+[Case 9] Start: Ahmedabad | Goal: Indore
+Path : Ahmedabad -> Indore
+Cost : 400
+Nodes Explored (Time Complexity) : 2
+Max Nodes Stored (Space Complexity) : 7
+
+[Case 10] Start: Visakhapatnam | Goal: Rajkot
+Path : Visakhapatnam -> Hyderabad -> Pune -> Mumbai -> Surat -> Vadodara -> Ahmedabad -> Rajkot
+Cost : 2095
+Nodes Explored (Time Complexity) : 14
+Max Nodes Stored (Space Complexity) : 38
+
+[Case 11] Start: Jhansi | Goal: Solapur
+Path : Jhansi -> Bhopal -> Indore -> Nashik -> Pune -> Solapur
+Cost : 1405
+Nodes Explored (Time Complexity) : 10
+Max Nodes Stored (Space Complexity) : 29
+
+[Case 12] Start: Kota | Goal: Agra
+Path : Kota -> Jaipur -> Agra
+Cost : 490
+Nodes Explored (Time Complexity) : 2
+Max Nodes Stored (Space Complexity) : 5
+
+[Case 13] Start: Gwalior | Goal: Ranchi
+Path : Gwalior -> Jhansi -> Kanpur -> Prayagraj -> Varanasi -> Patna -> Ranchi
+Cost : 1230
+Nodes Explored (Time Complexity) : 9
+Max Nodes Stored (Space Complexity) : 17
+
+[Case 14] Start: Nashik | Goal: Kota
+Path : Nashik -> Surat -> Vadodara -> Udaipur -> Kota
+Cost : 1030
+Nodes Explored (Time Complexity) : 10
+Max Nodes Stored (Space Complexity) : 31
+
+[Case 15] Start: Delhi | Goal: Jaipur
+Path : Delhi -> Jaipur
+Cost : 280
+Nodes Explored (Time Complexity) : 1
+Max Nodes Stored (Space Complexity) : 4
+
 <span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cursor">&nbsp;</span></div>
         </div>
     </div>
     <div class="page-footer">
         <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
-        <span class="footer-right">Page 7 of 22</span>
+        <span class="footer-right">Page 11 of 27</span>
     </div>
 </div>
 
-<!-- ================= PART 2: PAGE 8 ================= -->
+<!-- ================= PART 1: PAGE 12 ================= -->
+<div class="page">
+    <div class="content-body">
+        <h1 class="doc-title">6. Comparative Observation Table &amp; Complexity Analysis (15 Runs)</h1>
+        <p class="arrow-bullet">➔ Comprehensive comparison across 15 random state pairs (BFS vs DFS vs A* Search):</p>
+
+        <table class="data-table" style="font-size: 7.6pt;">
+            <tr>
+                <th rowspan="2" style="text-align:center; width:4%;">#</th>
+                <th rowspan="2" style="width:23%;">Route (Start &rarr; Goal)</th>
+                <th colspan="3" style="text-align:center; background:#e0f2fe;">BFS Search</th>
+                <th colspan="3" style="text-align:center; background:#fef3c7;">DFS Search</th>
+                <th colspan="3" style="text-align:center; background:#ccfbf1;">A* Search (Straight-Line h)</th>
+            </tr>
+            <tr>
+                <th style="text-align:center; background:#e0f2fe;">Cost</th>
+                <th style="text-align:center; background:#e0f2fe;">Nodes Exp.</th>
+                <th style="text-align:center; background:#e0f2fe;">Max Q</th>
+                <th style="text-align:center; background:#fef3c7;">Cost</th>
+                <th style="text-align:center; background:#fef3c7;">Nodes Exp.</th>
+                <th style="text-align:center; background:#fef3c7;">Max Stack</th>
+                <th style="text-align:center; background:#ccfbf1;">Cost</th>
+                <th style="text-align:center; background:#ccfbf1;">Nodes Exp.</th>
+                <th style="text-align:center; background:#ccfbf1;">Max PQ</th>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:600;">1</td>
+                <td style="font-weight:600;">Chandigarh &rarr; Ahmedabad</td>
+                <td style="text-align:center;">1180 km</td>
+                <td style="text-align:center;">11</td>
+                <td style="text-align:center;">20</td>
+                <td style="text-align:center;">6490 km</td>
+                <td style="text-align:center;">32</td>
+                <td style="text-align:center;">48</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">1180 km</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">4</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">11</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:600;">2</td>
+                <td style="font-weight:600;">Kota &rarr; Kanpur</td>
+                <td style="text-align:center;">775 km</td>
+                <td style="text-align:center;">11</td>
+                <td style="text-align:center;">24</td>
+                <td style="text-align:center;">5745 km</td>
+                <td style="text-align:center;">17</td>
+                <td style="text-align:center;">28</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">775 km</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">3</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">8</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:600;">3</td>
+                <td style="font-weight:600;">Jhansi &rarr; Chennai</td>
+                <td style="text-align:center;">1810 km</td>
+                <td style="text-align:center;">27</td>
+                <td style="text-align:center;">47</td>
+                <td style="text-align:center;">4560 km</td>
+                <td style="text-align:center;">13</td>
+                <td style="text-align:center;">28</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">1810 km</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">9</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">30</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:600;">4</td>
+                <td style="font-weight:600;">Bhuj &rarr; Visakhapatnam</td>
+                <td style="text-align:center;">2300 km</td>
+                <td style="text-align:center;">27</td>
+                <td style="text-align:center;">37</td>
+                <td style="text-align:center;">2325 km</td>
+                <td style="text-align:center;">5</td>
+                <td style="text-align:center;">19</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">2215 km</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">18</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">35</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:600;">5</td>
+                <td style="font-weight:600;">Bhubaneswar &rarr; Ranchi</td>
+                <td style="text-align:center;">840 km</td>
+                <td style="text-align:center;">5</td>
+                <td style="text-align:center;">11</td>
+                <td style="text-align:center;">1090 km</td>
+                <td style="text-align:center;">2</td>
+                <td style="text-align:center;">5</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">840 km</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">2</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">5</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:600;">6</td>
+                <td style="font-weight:600;">Aurangabad &rarr; Ahmedabad</td>
+                <td style="text-align:center;">810 km</td>
+                <td style="text-align:center;">14</td>
+                <td style="text-align:center;">35</td>
+                <td style="text-align:center;">8010 km</td>
+                <td style="text-align:center;">28</td>
+                <td style="text-align:center;">42</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">705 km</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">4</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">13</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:600;">7</td>
+                <td style="font-weight:600;">Bhubaneswar &rarr; Jaipur</td>
+                <td style="text-align:center;">2040 km</td>
+                <td style="text-align:center;">30</td>
+                <td style="text-align:center;">39</td>
+                <td style="text-align:center;">4375 km</td>
+                <td style="text-align:center;">13</td>
+                <td style="text-align:center;">16</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">1945 km</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">11</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">28</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:600;">8</td>
+                <td style="font-weight:600;">Jhansi &rarr; Varanasi</td>
+                <td style="text-align:center;">625 km</td>
+                <td style="text-align:center;">18</td>
+                <td style="text-align:center;">47</td>
+                <td style="text-align:center;">545 km</td>
+                <td style="text-align:center;">3</td>
+                <td style="text-align:center;">8</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">545 km</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">3</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">8</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:600;">9</td>
+                <td style="font-weight:600;">Ahmedabad &rarr; Indore</td>
+                <td style="text-align:center;">400 km</td>
+                <td style="text-align:center;">4</td>
+                <td style="text-align:center;">12</td>
+                <td style="text-align:center;">400 km</td>
+                <td style="text-align:center;">1</td>
+                <td style="text-align:center;">4</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">400 km</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">2</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">7</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:600;">10</td>
+                <td style="font-weight:600;">Visakhapatnam &rarr; Rajkot</td>
+                <td style="text-align:center;">2205 km</td>
+                <td style="text-align:center;">27</td>
+                <td style="text-align:center;">31</td>
+                <td style="text-align:center;">8040 km</td>
+                <td style="text-align:center;">31</td>
+                <td style="text-align:center;">39</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">2095 km</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">14</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">38</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:600;">11</td>
+                <td style="font-weight:600;">Jhansi &rarr; Solapur</td>
+                <td style="text-align:center;">1405 km</td>
+                <td style="text-align:center;">33</td>
+                <td style="text-align:center;">47</td>
+                <td style="text-align:center;">4990 km</td>
+                <td style="text-align:center;">19</td>
+                <td style="text-align:center;">33</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">1405 km</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">10</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">29</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:600;">12</td>
+                <td style="font-weight:600;">Kota &rarr; Agra</td>
+                <td style="text-align:center;">490 km</td>
+                <td style="text-align:center;">4</td>
+                <td style="text-align:center;">11</td>
+                <td style="text-align:center;">6835 km</td>
+                <td style="text-align:center;">21</td>
+                <td style="text-align:center;">33</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">490 km</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">2</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">5</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:600;">13</td>
+                <td style="font-weight:600;">Gwalior &rarr; Ranchi</td>
+                <td style="text-align:center;">1615 km</td>
+                <td style="text-align:center;">29</td>
+                <td style="text-align:center;">42</td>
+                <td style="text-align:center;">3665 km</td>
+                <td style="text-align:center;">10</td>
+                <td style="text-align:center;">22</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">1230 km</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">9</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">17</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:600;">14</td>
+                <td style="font-weight:600;">Nashik &rarr; Kota</td>
+                <td style="text-align:center;">1090 km</td>
+                <td style="text-align:center;">20</td>
+                <td style="text-align:center;">33</td>
+                <td style="text-align:center;">7075 km</td>
+                <td style="text-align:center;">22</td>
+                <td style="text-align:center;">35</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">1030 km</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">10</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">31</td>
+            </tr>
+            <tr>
+                <td style="text-align:center; font-weight:600;">15</td>
+                <td style="font-weight:600;">Delhi &rarr; Jaipur</td>
+                <td style="text-align:center;">280 km</td>
+                <td style="text-align:center;">1</td>
+                <td style="text-align:center;">4</td>
+                <td style="text-align:center;">6520 km</td>
+                <td style="text-align:center;">24</td>
+                <td style="text-align:center;">37</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">280 km</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">1</td>
+                <td style="text-align:center; font-weight:bold; color:#0e7490;">4</td>
+            </tr>
+            <tr style="background:#f8fafc; font-weight:bold;">
+                <td colspan="2" style="text-align:right;">AVERAGES (15 Runs) :</td>
+                <td style="text-align:center;">1191.0 km</td>
+                <td style="text-align:center;">17.4</td>
+                <td style="text-align:center;">29.3</td>
+                <td style="text-align:center;">4711.0 km</td>
+                <td style="text-align:center;">16.1</td>
+                <td style="text-align:center;">26.5</td>
+                <td style="text-align:center; color:#0e7490;">1129.7 km</td>
+                <td style="text-align:center; color:#0e7490;">6.8</td>
+                <td style="text-align:center; color:#0e7490;">17.9</td>
+            </tr>
+        </table>
+
+        <p class="arrow-bullet">➔ <strong>Key Analytical Insights:</strong></p>
+        <p>• <strong>Optimality:</strong> A* consistently identified the true optimal shortest road distance (average <strong>1129.7 km</strong>), whereas BFS finds the shortest path in edge count (average <strong>1191.0 km</strong>) and DFS finds wandering paths (average <strong>4711.0 km</strong>).</p>
+        <p>• <strong>Time Complexity (Nodes Explored):</strong> A* explored only <strong>6.8 nodes</strong> on average, cutting state exploration by over <strong>60%</strong> compared to BFS (17.4 nodes) by using the straight-line heuristic to prune suboptimal directions.</p>
+        <p>• <strong>Space Complexity (Max Frontier):</strong> A* kept maximum priority queue memory footprint at only <strong>17.9 nodes</strong> on average, compared to 29.3 nodes in BFS.</p>
+    </div>
+    <div class="page-footer">
+        <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
+        <span class="footer-right">Page 12 of 27</span>
+    </div>
+</div>
+
+<!-- ================= PART 2: PAGE 13 ================= -->
 <div class="page">
     <div class="content-body">
         <h1 class="doc-title">➢ Hill Climbing Variants on the 8-Queens Problem</h1>
@@ -776,11 +1433,11 @@ Max Nodes Stored (Space Complexity) : 32
     </div>
     <div class="page-footer">
         <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
-        <span class="footer-right">Page 8 of 22</span>
+        <span class="footer-right">Page 13 of 27</span>
     </div>
 </div>
 
-<!-- ================= PART 2: PAGE 9 ================= -->
+<!-- ================= PART 2: PAGE 14 ================= -->
 <div class="page">
     <div class="content-body">
         <div class="code-card"><span class="cm"># column 0 has a queen in row 4, column 1 has a queen in row 6 ... and so on.</span>
@@ -825,11 +1482,11 @@ BOARD_SIZE = <span class="num">8</span>
     </div>
     <div class="page-footer">
         <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
-        <span class="footer-right">Page 9 of 22</span>
+        <span class="footer-right">Page 14 of 27</span>
     </div>
 </div>
 
-<!-- ================= PART 2: PAGE 10 ================= -->
+<!-- ================= PART 2: PAGE 15 ================= -->
 <div class="page">
     <div class="content-body">
         <div class="code-card">    <span class="cm"># Render the board to stdout. Q = queen, . = empty</span>
@@ -848,60 +1505,71 @@ BOARD_SIZE = <span class="num">8</span>
     <span class="kw-c">if</span> h_val == <span class="num">0</span>:
         print(<span class="st">"Result      : SUCCESS"</span>)
     <span class="kw-c">else</span>:
-        print(<span class="st">"Result      : FAILURE (stuck at a local optimum)"</span>)
+        print(<span class="st">"Result      : FAILURE (local optimum)"</span>)
     print(<span class="st">"Iterations  :"</span>, iters)
-    print(<span class="st">"Neighbour evaluations :"</span>, evals)
-    print()
-    display_board(final)</div>
-
-        <p><strong>2. steepest_ascent.py — Task 3</strong></p>
-        <div class="code-card"><span class="cm"># TASK 3 : Steepest Ascent Hill Climbing</span>
-<span class="cm"># Idea: 1. Look at ALL 56 neighbours. 2. Move to single best one (lowest h). 3. Stop if no improvement.</span>
-<span class="kw">import</span> random
-<span class="kw">from</span> nqueens_utils <span class="kw">import</span> count_conflicts, generate_neighbors, create_random_board, show_summary
-
-<span class="kw">def</span> <span class="fn">steepest_climb</span>(board, verbose=False):
-    iterations = <span class="num">0</span>
-    evaluations = <span class="num">0</span>
-    current_h = count_conflicts(board)
-    <span class="kw-c">while</span> current_h &gt; <span class="num">0</span>:
-        optimal = board
-        optimal_h = current_h
-        <span class="kw-c">for</span> neighbor <span class="kw-c">in</span> generate_neighbors(board):
-            neighbor_h = count_conflicts(neighbor)
-            evaluations += <span class="num">1</span></div>
+    print(<span class="st">"Evaluations :"</span>, evals)</div>
     </div>
     <div class="page-footer">
         <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
-        <span class="footer-right">Page 10 of 22</span>
+        <span class="footer-right">Page 15 of 27</span>
     </div>
 </div>
 
-<!-- ================= PART 2: PAGE 11 ================= -->
+<!-- ================= PART 2: PAGE 16 ================= -->
 <div class="page">
     <div class="content-body">
-        <div class="code-card">            <span class="kw-c">if</span> neighbor_h &lt; optimal_h:
-                optimal = neighbor
-                optimal_h = neighbor_h
-        <span class="cm"># no improvement means we hit a plateau or local minimum</span>
-        <span class="kw-c">if</span> optimal_h &gt;= current_h:
+        <p><strong>2. steepest_ascent.py — Task 3</strong></p>
+        <p>Evaluates every neighbour in the neighbourhood and moves to the one with lowest h.</p>
+
+        <div class="code-card"><span class="cm"># TASK 3 : Steepest Ascent Hill Climbing</span>
+<span class="kw">import</span> random
+<span class="kw">from</span> nqueens_utils <span class="kw">import</span> count_conflicts, generate_neighbors, create_random_board, display_board, show_summary
+
+<span class="kw">def</span> <span class="fn">steepest_climb</span>(board):
+    current = board[:]
+    current_h = count_conflicts(current)
+    iterations = <span class="num">0</span>
+    evaluations = <span class="num">0</span>
+
+    <span class="kw-c">while True</span>:
+        neighbors = generate_neighbors(current)
+        evaluations += len(neighbors)
+        best_neighbor = <span class="kw-c">None</span>
+        best_h = current_h
+
+        <span class="kw-c">for</span> n <span class="kw-c">in</span> neighbors:
+            h = count_conflicts(n)
+            <span class="kw-c">if</span> h &lt; best_h:
+                best_h = h
+                best_neighbor = n
+
+        <span class="kw-c">if</span> best_neighbor <span class="kw-c">is None</span>:
             <span class="kw-c">break</span>
-        board = optimal
-        current_h = optimal_h
+
+        current = best_neighbor
+        current_h = best_h
         iterations += <span class="num">1</span>
-        <span class="kw-c">if</span> verbose:
-            print(<span class="st">"step"</span>, iterations, <span class="st">":"</span>, board, <span class="st">" h ="</span>, current_h)
-    <span class="kw">return</span> board, current_h, iterations, evaluations
+
+    <span class="kw-c">return</span> current, current_h, iterations, evaluations
 
 <span class="kw-c">if</span> __name__ == <span class="st">"__main__"</span>:
-    random.seed(<span class="num">23</span>)
+    random.seed(<span class="num">42</span>)
     initial = create_random_board()
+    final, h_val, iters, evals = steepest_climb(initial)
     print(<span class="st">"Steepest Ascent Hill Climbing"</span>)
-    print(<span class="st">"Start board :"</span>, initial, <span class="st">" h ="</span>, count_conflicts(initial))
-    final, h_val, iters, evals = steepest_climb(initial, verbose=True)
+    display_board(initial)
     show_summary(<span class="st">"Steepest Ascent Hill Climbing"</span>, initial, final, h_val, iters, evals)</div>
+    </div>
+    <div class="page-footer">
+        <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
+        <span class="footer-right">Page 16 of 27</span>
+    </div>
+</div>
 
-        <p><strong>Output :</strong></p>
+<!-- ================= PART 2: PAGE 17 ================= -->
+<div class="page">
+    <div class="content-body">
+        <p><strong>Outputs :</strong></p>
         <div class="terminal-card">
             <div class="terminal-tabs">
                 <span>Problems</span>
@@ -912,373 +1580,77 @@ BOARD_SIZE = <span class="num">8</span>
             </div>
             <div class="terminal-body"><span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cmd">python .\steepest_hill.py</span>
 Steepest Ascent Hill Climbing
-Start board : [4, 1, 0, 4, 6, 6, 5, 2]  h = 5
-step 1 : [4, 1, 0, 4, 6, 1, 5, 2]  h = 3
-step 2 : [4, 7, 0, 4, 6, 1, 5, 2]  h = 1
-step 3 : [3, 7, 0, 4, 6, 1, 5, 2]  h = 0
+ . . . . . . . Q
+ Q . . Q . . . .
+ . . . . . . . .
+ . . . . . Q . .
+ . . . . . . . .
+ . Q . . Q . Q .
+ . . Q . . . . .
+ . . . . . . . .
 
 ===== Steepest Ascent Hill Climbing =====
-Start board : [4, 1, 0, 4, 6, 6, 5, 2]  h = 5
-Final board : [3, 7, 0, 4, 6, 1, 5, 2]  h = 0
-Result      : SUCCESS
+Start board : [1, 5, 6, 1, 5, 3, 5, 0]  h = 7
+Final board : [1, 4, 6, 3, 5, 2, 5, 0]  h = 1
+Result      : FAILURE (local optimum)
 Iterations  : 3
-Neighbour evaluations : 168
-
- . . Q . . . . .
- . . . . . Q . .
- . . . . . . . Q
- Q . . . . . . .
- . . . Q . . . .
- . . . . . . Q .
- . . . . Q . . .
- . Q . . . . . .
+Evaluations : 168
 <span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cursor">&nbsp;</span></div>
         </div>
     </div>
     <div class="page-footer">
         <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
-        <span class="footer-right">Page 11 of 22</span>
-    </div>
-</div>
-
-<!-- ================= PART 2: PAGE 12 ================= -->
-<div class="page">
-    <div class="content-body">
-        <p><strong>3. first_choice.py — Task 4</strong></p>
-        <div class="code-card"><span class="cm"># TASK 4 : First-Choice Hill Climbing</span>
-<span class="cm"># Idea: 1. Shuffle neighbours in random order. 2. Move to FIRST improving neighbour. 3. Stop if none.</span>
-<span class="kw">import</span> random
-<span class="kw">from</span> nqueens_utils <span class="kw">import</span> count_conflicts, generate_neighbors, create_random_board, show_summary
-
-<span class="kw">def</span> <span class="fn">first_choice_climb</span>(board, verbose=False):
-    iterations = <span class="num">0</span>
-    evaluations = <span class="num">0</span>
-    current_h = count_conflicts(board)
-    <span class="kw-c">while</span> current_h &gt; <span class="num">0</span>:
-        candidates = generate_neighbors(board)
-        random.shuffle(candidates)
-        improved = False
-        <span class="kw-c">for</span> neighbor <span class="kw-c">in</span> candidates:
-            neighbor_h = count_conflicts(neighbor)
-            evaluations += <span class="num">1</span>
-            <span class="kw-c">if</span> neighbor_h &lt; current_h:
-                board = neighbor
-                current_h = neighbor_h
-                iterations += <span class="num">1</span>
-                improved = True
-                <span class="kw-c">if</span> verbose:
-                    print(<span class="st">"step"</span>, iterations, <span class="st">":"</span>, board, <span class="st">" h ="</span>, current_h)
-                <span class="kw-c">break</span>
-        <span class="kw-c">if</span> <span class="kw-c">not</span> improved:
-            <span class="kw-c">break</span>
-    <span class="kw">return</span> board, current_h, iterations, evaluations
-
-<span class="kw-c">if</span> __name__ == <span class="st">"__main__"</span>:
-    random.seed(<span class="num">0</span>)
-    initial = create_random_board()
-    print(<span class="st">"First-Choice Hill Climbing"</span>)
-    print(<span class="st">"Start board :"</span>, initial, <span class="st">" h ="</span>, count_conflicts(initial))
-    final, h_val, iters, evals = first_choice_climb(initial, verbose=True)</div>
-    </div>
-    <div class="page-footer">
-        <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
-        <span class="footer-right">Page 12 of 22</span>
-    </div>
-</div>
-
-<!-- ================= PART 2: PAGE 13 ================= -->
-<div class="page">
-    <div class="content-body">
-        <div class="code-card">    show_summary(<span class="st">"First-Choice Hill Climbing"</span>, initial, final, h_val, iters, evals)</div>
-
-        <p><strong>Output :</strong></p>
-        <div class="terminal-card">
-            <div class="terminal-tabs">
-                <span>Problems</span>
-                <span>Output</span>
-                <span>Debug Console</span>
-                <span class="terminal-tab-active">Terminal</span>
-                <span>Ports</span>
-            </div>
-            <div class="terminal-body"><span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cmd">python .\first_choice_hc.py</span>
-First-Choice Hill Climbing
-Start board : [6, 6, 0, 4, 7, 6, 4, 7]  h = 9
-step 1 : [5, 6, 0, 4, 7, 6, 4, 7]  h = 8
-step 2 : [5, 6, 0, 4, 7, 1, 4, 7]  h = 5
-step 3 : [5, 6, 0, 5, 7, 1, 4, 7]  h = 4
-step 4 : [5, 6, 0, 5, 7, 1, 3, 7]  h = 3
-step 5 : [5, 2, 0, 5, 7, 1, 3, 7]  h = 2
-step 6 : [5, 2, 0, 5, 7, 1, 3, 6]  h = 1
-step 7 : [4, 2, 0, 5, 7, 1, 3, 6]  h = 0
-
-===== First-Choice Hill Climbing =====
-Start board : [6, 6, 0, 4, 7, 6, 4, 7]  h = 9
-Final board : [4, 2, 0, 5, 7, 1, 3, 6]  h = 0
-Result      : SUCCESS
-Iterations  : 7
-Neighbour evaluations : 94
-
- . . Q . . . . .
- . . . . . Q . .
- . Q . . . . . .
- . . . . . . Q .
- Q . . . . . . .
- . . . Q . . . .
- . . . . . . . Q
- . . . . Q . . .
-<span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cursor">&nbsp;</span></div>
-        </div>
-
-        <p><strong>4. stochastic.py — Task 5</strong></p>
-        <div class="code-card"><span class="cm"># TASK 5 : Stochastic Hill Climbing</span>
-<span class="cm"># Idea: 1. Find ALL neighbours better than current. 2. Pick ONE randomly. 3. Stop if none.</span></div>
-    </div>
-    <div class="page-footer">
-        <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
-        <span class="footer-right">Page 13 of 22</span>
-    </div>
-</div>
-
-<!-- ================= PART 2: PAGE 14 ================= -->
-<div class="page">
-    <div class="content-body">
-        <div class="code-card"><span class="kw">import</span> random
-<span class="kw">from</span> nqueens_utils <span class="kw">import</span> count_conflicts, generate_neighbors, create_random_board, show_summary
-
-<span class="kw">def</span> <span class="fn">stochastic_climb</span>(board, verbose=False):
-    iterations = <span class="num">0</span>
-    evaluations = <span class="num">0</span>
-    current_h = count_conflicts(board)
-    <span class="kw-c">while</span> current_h &gt; <span class="num">0</span>:
-        improving = []
-        <span class="kw-c">for</span> neighbor <span class="kw-c">in</span> generate_neighbors(board):
-            neighbor_h = count_conflicts(neighbor)
-            evaluations += <span class="num">1</span>
-            <span class="kw-c">if</span> neighbor_h &lt; current_h:
-                improving.append(neighbor)
-        <span class="kw-c">if</span> <span class="kw-c">not</span> improving:
-            <span class="kw-c">break</span>
-        board = random.choice(improving)
-        current_h = count_conflicts(board)
-        iterations += <span class="num">1</span>
-        <span class="kw-c">if</span> verbose:
-            print(<span class="st">"step"</span>, iterations, <span class="st">":"</span>, board, <span class="st">" h ="</span>, current_h,
-                  <span class="st">" (picked from"</span>, len(improving), <span class="st">"better neighbours)"</span>)
-    <span class="kw">return</span> board, current_h, iterations, evaluations
-
-<span class="kw-c">if</span> __name__ == <span class="st">"__main__"</span>:
-    random.seed(<span class="num">8</span>)
-    initial = create_random_board()
-    print(<span class="st">"Stochastic Hill Climbing"</span>)
-    print(<span class="st">"Start board :"</span>, initial, <span class="st">" h ="</span>, count_conflicts(initial))
-    final, h_val, iters, evals = stochastic_climb(initial, verbose=True)
-    show_summary(<span class="st">"Stochastic Hill Climbing"</span>, initial, final, h_val, iters, evals)</div>
-    </div>
-    <div class="page-footer">
-        <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
-        <span class="footer-right">Page 14 of 22</span>
-    </div>
-</div>
-
-<!-- ================= PART 2: PAGE 15 ================= -->
-<div class="page">
-    <div class="content-body">
-        <p><strong>Output :</strong></p>
-        <div class="terminal-card">
-            <div class="terminal-tabs">
-                <span>Problems</span>
-                <span>Output</span>
-                <span>Debug Console</span>
-                <span class="terminal-tab-active">Terminal</span>
-                <span>Ports</span>
-            </div>
-            <div class="terminal-body"><span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cmd">python .\stochastic_hc.py</span>
-Stochastic Hill Climbing
-Start board : [3, 5, 6, 2, 3, 0, 1, 2]  h = 9
-step 1 : [3, 5, 6, 2, 5, 0, 1, 2]  h = 8  (picked from 23 better neighbours)
-step 2 : [3, 5, 6, 2, 5, 0, 1, 0]  h = 6  (picked from 23 better neighbours)
-step 3 : [3, 5, 6, 2, 5, 1, 1, 0]  h = 5  (picked from 15 better neighbours)
-step 4 : [3, 5, 6, 2, 5, 1, 4, 0]  h = 3  (picked from 11 better neighbours)
-step 5 : [3, 5, 6, 2, 5, 7, 4, 0]  h = 2  (picked from 6 better neighbours)
-step 6 : [3, 1, 6, 2, 5, 7, 4, 0]  h = 0  (picked from 1 better neighbours)
-
-===== Stochastic Hill Climbing =====
-Start board : [3, 5, 6, 2, 3, 0, 1, 2]  h = 9
-Final board : [3, 1, 6, 2, 5, 7, 4, 0]  h = 0
-Result      : SUCCESS
-Iterations  : 6
-Neighbour evaluations : 336
-
- . . . . . . . Q
- . Q . . . . . .
- . . . Q . . . .
- Q . . . . . . .
- . . . . . . Q .
- . . . . Q . . .
- . . Q . . . . .
- . . . . . Q . .
-<span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cursor">&nbsp;</span></div>
-        </div>
-
-        <p><strong>5. random_restart.py — Task 6</strong></p>
-        <div class="code-card"><span class="cm"># TASK 6 : Random Restart Hill Climbing</span>
-<span class="cm"># Idea: 1. Run Steepest Climb. 2. If stuck (h > 0), restart from random board. 3. Continue up to 100 restarts.</span></div>
-    </div>
-    <div class="page-footer">
-        <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
-        <span class="footer-right">Page 15 of 22</span>
-    </div>
-</div>
-
-<!-- ================= PART 2: PAGE 16 ================= -->
-<div class="page">
-    <div class="content-body">
-        <div class="code-card"><span class="kw">import</span> random
-<span class="kw">from</span> nqueens_utils <span class="kw">import</span> count_conflicts, create_random_board, show_summary
-<span class="kw">from</span> steepest_hill <span class="kw">import</span> steepest_climb
-
-RESTART_LIMIT = <span class="num">100</span>
-
-<span class="kw">def</span> <span class="fn">restart_climb</span>(board, verbose=False):
-    cumulative_iters = <span class="num">0</span>
-    cumulative_evals = <span class="num">0</span>
-    restart_count = <span class="num">0</span>
-    <span class="kw-c">while</span> True:
-        solution, h_val, iters, evals = steepest_climb(board)
-        cumulative_iters += iters
-        cumulative_evals += evals
-        <span class="kw-c">if</span> verbose:
-            print(<span class="st">"climb"</span>, restart_count, <span class="st">": ended at"</span>, solution, <span class="st">" h ="</span>, h_val)
-        <span class="kw-c">if</span> h_val == <span class="num">0</span>:
-            <span class="kw-c">break</span>
-        <span class="kw-c">if</span> restart_count &gt;= RESTART_LIMIT:
-            <span class="kw-c">break</span>
-        restart_count += <span class="num">1</span>
-        board = create_random_board()
-    <span class="kw">return</span> solution, h_val, cumulative_iters, cumulative_evals, restart_count
-
-<span class="kw-c">if</span> __name__ == <span class="st">"__main__"</span>:
-    random.seed(<span class="num">9</span>)
-    initial = create_random_board()
-    print(<span class="st">"Random Restart Hill Climbing"</span>)
-    print(<span class="st">"Start board :"</span>, initial, <span class="st">" h ="</span>, count_conflicts(initial))
-    final, h_val, iters, evals, restarts = restart_climb(initial, verbose=True)
-    show_summary(<span class="st">"Random Restart Hill Climbing"</span>, initial, final, h_val, iters, evals)
-    print(<span class="st">"Restarts used :"</span>, restarts)</div>
-
-        <p><strong>Output :</strong></p>
-        <div class="terminal-card">
-            <div class="terminal-tabs">
-                <span>Problems</span>
-                <span>Output</span>
-                <span>Debug Console</span>
-                <span class="terminal-tab-active">Terminal</span>
-                <span>Ports</span>
-            </div>
-            <div class="terminal-body"><span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cmd">python .\restart_hill.py</span>
-Random Restart Hill Climbing
-Start board : [7, 5, 4, 2, 2, 0, 5, 7]  h = 8
-climb 0 : ended at [7, 1, 4, 6, 2, 0, 5, 3]  h = 1
-climb 1 : ended at [1, 5, 0, 0, 3, 7, 6, 2]  h = 2
-climb 2 : ended at [5, 3, 0, 4, 7, 1, 6, 2]  h = 0
-
-===== Random Restart Hill Climbing =====
-Start board : [7, 5, 4, 2, 2, 0, 5, 7]  h = 8
-Final board : [5, 3, 0, 4, 7, 1, 6, 2]  h = 0
-Result      : SUCCESS
-Iterations  : 9
-Neighbour evaluations : 616
-Restarts used : 2
-<span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cursor">&nbsp;</span></div>
-        </div>
-    </div>
-    <div class="page-footer">
-        <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
-        <span class="footer-right">Page 16 of 22</span>
-    </div>
-</div>
-
-<!-- ================= PART 2: PAGE 17 ================= -->
-<div class="page">
-    <div class="content-body">
-        <p><strong>6. run_experiments.py — Experiments</strong></p>
-        <div class="code-card"><span class="cm"># EXPERIMENTS : run each algorithm 20 times and print the observation table.</span>
-<span class="cm"># All four algorithms start from the SAME 20 random boards so comparison is fair. random.seed(21).</span>
-<span class="kw">import</span> random
-<span class="kw">from</span> nqueens_utils <span class="kw">import</span> count_conflicts, create_random_board
-<span class="kw">from</span> steepest_hill <span class="kw">import</span> steepest_climb
-<span class="kw">from</span> first_choice_hc <span class="kw">import</span> first_choice_climb
-<span class="kw">from</span> stochastic_hc <span class="kw">import</span> stochastic_climb
-<span class="kw">from</span> restart_hill <span class="kw">import</span> restart_climb
-
-NUM_TRIALS = <span class="num">20</span>
-
-<span class="kw">def</span> <span class="fn">benchmark_algorithm</span>(algo_label, algo_fn, boards):
-    print()
-    print(<span class="st">"--- "</span> + algo_label + <span class="st">" : "</span> + str(NUM_TRIALS) + <span class="st">" runs ---"</span>)
-    print(<span class="st">"Run | Start h | Result  | Final h | Iters | Evals"</span>)
-    wins = <span class="num">0</span>
-    sum_iters = <span class="num">0</span>
-    sum_evals = <span class="num">0</span>
-    sum_h = <span class="num">0</span>
-
-    <span class="kw-c">for</span> idx <span class="kw-c">in</span> range(NUM_TRIALS):
-        test_board = boards[idx].copy()
-        <span class="kw-c">if</span> algo_label == <span class="st">"Random Restart"</span>:
-            final, h_val, iters, evals, _ = algo_fn(test_board)
-        <span class="kw-c">else</span>:
-            final, h_val, iters, evals = algo_fn(test_board)
-
-        outcome = <span class="st">"Success"</span> <span class="kw-c">if</span> h_val == <span class="num">0</span> <span class="kw-c">else</span> <span class="st">"Failure"</span>
-        <span class="kw-c">if</span> h_val == <span class="num">0</span>:
-            wins += <span class="num">1</span>
-        sum_iters += iters
-        sum_evals += evals
-        sum_h += h_val
-
-        print(<span class="st">"%3d | %7d | %-7s | %7d | %5d | %6d"</span>
-              % (idx + <span class="num">1</span>, count_conflicts(boards[idx]), outcome, h_val, iters, evals))
-
-    <span class="kw">return</span> wins, sum_iters / NUM_TRIALS, sum_evals / NUM_TRIALS, sum_h / NUM_TRIALS</div>
-    </div>
-    <div class="page-footer">
-        <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
-        <span class="footer-right">Page 17 of 22</span>
+        <span class="footer-right">Page 17 of 27</span>
     </div>
 </div>
 
 <!-- ================= PART 2: PAGE 18 ================= -->
 <div class="page">
     <div class="content-body">
-        <div class="code-card"><span class="cm"># ---- main execution ----</span>
+        <p><strong>3. first_choice.py — Task 4</strong></p>
+        <p>Scans neighbours in random order and accepts the first one with strictly lower h.</p>
+
+        <div class="code-card"><span class="cm"># TASK 4 : First-Choice Hill Climbing</span>
+<span class="kw">import</span> random
+<span class="kw">from</span> nqueens_utils <span class="kw">import</span> count_conflicts, generate_neighbors, create_random_board, display_board, show_summary
+
+<span class="kw">def</span> <span class="fn">first_choice_climb</span>(board):
+    current = board[:]
+    current_h = count_conflicts(current)
+    iterations = <span class="num">0</span>
+    evaluations = <span class="num">0</span>
+
+    <span class="kw-c">while True</span>:
+        neighbors = generate_neighbors(current)
+        random.shuffle(neighbors)
+        improved = <span class="kw-c">False</span>
+
+        <span class="kw-c">for</span> n <span class="kw-c">in</span> neighbors:
+            evaluations += <span class="num">1</span>
+            h = count_conflicts(n)
+            <span class="kw-c">if</span> h &lt; current_h:
+                current = n
+                current_h = h
+                iterations += <span class="num">1</span>
+                improved = <span class="kw-c">True</span>
+                <span class="kw-c">break</span>
+
+        <span class="kw-c">if not</span> improved:
+            <span class="kw-c">break</span>
+
+    <span class="kw-c">return</span> current, current_h, iterations, evaluations
+
 <span class="kw-c">if</span> __name__ == <span class="st">"__main__"</span>:
-    random.seed(<span class="num">21</span>)
-    boards = [create_random_board() <span class="kw-c">for</span> _ <span class="kw-c">in</span> range(NUM_TRIALS)]
-    algorithms = [
-        (<span class="st">"Steepest Ascent"</span>, steepest_climb),
-        (<span class="st">"First-Choice"</span>, first_choice_climb),
-        (<span class="st">"Stochastic"</span>, stochastic_climb),
-        (<span class="st">"Random Restart"</span>, restart_climb),
-    ]
-
-    summary_rows = []
-    <span class="kw-c">for</span> label, fn <span class="kw-c">in</span> algorithms:
-        row = (label,) + benchmark_algorithm(label, fn, boards)
-        summary_rows.append(row)
-
-    print()
-    print(<span class="st">"============== OBSERVATION TABLE =============="</span>)
-    print(<span class="st">"(seed = 21, "</span> + str(NUM_TRIALS) + <span class="st">" runs per algorithm)"</span>)
-    print()
-    print(<span class="st">"Algorithm        | Successes (20) | Avg Iterations | Avg Evaluations | Avg Final h"</span>)
-    print(<span class="st">"-"</span> * <span class="num">82</span>)
-    <span class="kw-c">for</span> label, wins, avg_it, avg_ev, avg_h <span class="kw-c">in</span> summary_rows:
-        print(<span class="st">"%-16s | %14d | %14.2f | %15.2f | %11.2f"</span>
-              % (label, wins, avg_it, avg_ev, avg_h))</div>
+    random.seed(<span class="num">42</span>)
+    initial = create_random_board()
+    final, h_val, iters, evals = first_choice_climb(initial)
+    print(<span class="st">"First-Choice Hill Climbing"</span>)
+    display_board(initial)
+    show_summary(<span class="st">"First-Choice Hill Climbing"</span>, initial, final, h_val, iters, evals)</div>
     </div>
     <div class="page-footer">
         <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
-        <span class="footer-right">Page 18 of 22</span>
+        <span class="footer-right">Page 18 of 27</span>
     </div>
 </div>
 
@@ -1294,63 +1666,86 @@ NUM_TRIALS = <span class="num">20</span>
                 <span class="terminal-tab-active">Terminal</span>
                 <span>Ports</span>
             </div>
-            <div class="terminal-body"><span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cmd">python .\run_experiments.py</span>
---- Steepest Ascent : 20 runs ---
-Run | Start h | Result  | Final h | Iters | Evals
-  1 |       6 | Failure |       1 |     4 |    280
-  2 |       8 | Failure |       1 |     3 |    224
-  3 |       8 | Failure |       1 |     3 |    224
-  4 |       8 | Failure |       2 |     2 |    168
-  5 |      10 | Failure |       1 |     3 |    224
-  6 |      11 | Failure |       1 |     4 |    280
-  7 |       7 | Failure |       1 |     4 |    280
-  8 |       7 | Failure |       1 |     3 |    224
-  9 |       7 | Failure |       2 |     3 |    224
- 10 |      10 | Success |       0 |     5 |    280
- 11 |       5 | Success |       0 |     4 |    224
- 12 |       5 | Failure |       1 |     3 |    224
- 13 |       8 | Failure |       2 |     3 |    224
- 14 |       4 | Success |       0 |     3 |    168
- 15 |       7 | Failure |       2 |     2 |    168
- 16 |       7 | Failure |       1 |     3 |    224
- 17 |       9 | Failure |       2 |     3 |    224
- 18 |       8 | Failure |       1 |     3 |    224
- 19 |       7 | Failure |       1 |     3 |    224
- 20 |       9 | Failure |       1 |     3 |    224
+            <div class="terminal-body"><span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cmd">python .\first_choice_hc.py</span>
+First-Choice Hill Climbing
+ . . . . . . . Q
+ Q . . Q . . . .
+ . . . . . . . .
+ . . . . . Q . .
+ . . . . . . . .
+ . Q . . Q . Q .
+ . . Q . . . . .
+ . . . . . . . .
 
---- First-Choice : 20 runs ---
-Run | Start h | Result  | Final h | Iters | Evals
-  1 |       6 | Failure |       2 |     3 |     69
-  2 |       8 | Failure |       1 |     5 |     80
-  3 |       8 | Failure |       1 |     6 |    151
-  4 |       8 | Failure |       1 |     6 |    137
-  5 |      10 | Success |       0 |     6 |     54
-  6 |      11 | Success |       0 |    10 |     95
-  7 |       7 | Success |       0 |     5 |     39
-  8 |       7 | Failure |       3 |     3 |    102
-  9 |       7 | Failure |       1 |     5 |    150
- 10 |      10 | Failure |       1 |     9 |    122
- 11 |       5 | Failure |       2 |     3 |    108
- 12 |       5 | Failure |       2 |     3 |     82
- 13 |       8 | Failure |       2 |     6 |     75
- 14 |       4 | Success |       0 |     3 |     25
- 15 |       7 | Failure |       2 |     4 |     69
- 16 |       7 | Success |       0 |     6 |     97
- 17 |       9 | Failure |       2 |     5 |     85
- 18 |       8 | Failure |       1 |     5 |     96
- 19 |       7 | Failure |       1 |     5 |     91
- 20 |       9 | Failure |       1 |     6 |     95</div>
+===== First-Choice Hill Climbing =====
+Start board : [1, 5, 6, 1, 5, 3, 5, 0]  h = 7
+Final board : [7, 5, 2, 6, 3, 0, 4, 1]  h = 0
+Result      : SUCCESS
+Iterations  : 7
+Evaluations : 84
+<span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cursor">&nbsp;</span></div>
         </div>
     </div>
     <div class="page-footer">
         <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
-        <span class="footer-right">Page 19 of 22</span>
+        <span class="footer-right">Page 19 of 27</span>
     </div>
 </div>
 
 <!-- ================= PART 2: PAGE 20 ================= -->
 <div class="page">
     <div class="content-body">
+        <p><strong>4. stochastic.py — Task 5</strong></p>
+        <p>Finds all improving neighbours and picks one uniformly at random.</p>
+
+        <div class="code-card"><span class="cm"># TASK 5 : Stochastic Hill Climbing</span>
+<span class="kw">import</span> random
+<span class="kw">from</span> nqueens_utils <span class="kw">import</span> count_conflicts, generate_neighbors, create_random_board, display_board, show_summary
+
+<span class="kw">def</span> <span class="fn">stochastic_climb</span>(board):
+    current = board[:]
+    current_h = count_conflicts(current)
+    iterations = <span class="num">0</span>
+    evaluations = <span class="num">0</span>
+
+    <span class="kw-c">while True</span>:
+        neighbors = generate_neighbors(current)
+        evaluations += len(neighbors)
+        better = []
+
+        <span class="kw-c">for</span> n <span class="kw-c">in</span> neighbors:
+            h = count_conflicts(n)
+            <span class="kw-c">if</span> h &lt; current_h:
+                better.append((n, h))
+
+        <span class="kw-c">if not</span> better:
+            <span class="kw-c">break</span>
+
+        chosen, chosen_h = random.choice(better)
+        current = chosen
+        current_h = chosen_h
+        iterations += <span class="num">1</span>
+
+    <span class="kw-c">return</span> current, current_h, iterations, evaluations
+
+<span class="kw-c">if</span> __name__ == <span class="st">"__main__"</span>:
+    random.seed(<span class="num">42</span>)
+    initial = create_random_board()
+    final, h_val, iters, evals = stochastic_climb(initial)
+    print(<span class="st">"Stochastic Hill Climbing"</span>)
+    display_board(initial)
+    show_summary(<span class="st">"Stochastic Hill Climbing"</span>, initial, final, h_val, iters, evals)</div>
+    </div>
+    <div class="page-footer">
+        <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
+        <span class="footer-right">Page 20 of 27</span>
+    </div>
+</div>
+
+<!-- ================= PART 2: PAGE 21 ================= -->
+<div class="page">
+    <div class="content-body">
+        <p><strong>Outputs :</strong></p>
         <div class="terminal-card">
             <div class="terminal-tabs">
                 <span>Problems</span>
@@ -1359,52 +1754,127 @@ Run | Start h | Result  | Final h | Iters | Evals
                 <span class="terminal-tab-active">Terminal</span>
                 <span>Ports</span>
             </div>
-            <div class="terminal-body">--- Stochastic : 20 runs ---
-Run | Start h | Result  | Final h | Iters | Evals
-  1 |       6 | Failure |       1 |     4 |    280
-  2 |       8 | Failure |       1 |     5 |    336
-  3 |       8 | Failure |       2 |     5 |    336
-  4 |       8 | Failure |       2 |     5 |    336
-  5 |      10 | Failure |       1 |     7 |    448
-  6 |      11 | Failure |       1 |     7 |    448
-  7 |       7 | Failure |       1 |     6 |    392
-  8 |       7 | Failure |       1 |     4 |    280
-  9 |       7 | Success |       0 |     6 |    336
- 10 |      10 | Failure |       1 |     7 |    448
- 11 |       5 | Failure |       2 |     3 |    224
- 12 |       5 | Failure |       1 |     3 |    224
- 13 |       8 | Failure |       1 |     6 |    392
- 14 |       4 | Failure |       1 |     2 |    168
- 15 |       7 | Failure |       2 |     4 |    280
- 16 |       7 | Failure |       2 |     3 |    224
- 17 |       9 | Failure |       1 |     6 |    392
- 18 |       8 | Success |       0 |     5 |    280
- 19 |       7 | Failure |       2 |     4 |    280
- 20 |       9 | Failure |       2 |     6 |    392
+            <div class="terminal-body"><span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cmd">python .\stochastic_hc.py</span>
+Stochastic Hill Climbing
+ . . . . . . . Q
+ Q . . Q . . . .
+ . . . . . . . .
+ . . . . . Q . .
+ . . . . . . . .
+ . Q . . Q . Q .
+ . . Q . . . . .
+ . . . . . . . .
 
---- Random Restart : 20 runs ---
-Run | Start h | Result  | Final h | Iters | Evals
-  1 |       6 | Success |       0 |    15 |   1008
-  2 |       8 | Success |       0 |    38 |   2800
-  3 |       8 | Success |       0 |    11 |    728
-  4 |       8 | Success |       0 |    16 |   1176
-  5 |      10 | Success |       0 |    17 |   1120
-  6 |      11 | Success |       0 |    32 |   2184
-  7 |       7 | Success |       0 |    15 |   1008
-  8 |       7 | Success |       0 |    45 |   3192
-  9 |       7 | Success |       0 |    45 |   3192
- 10 |      10 | Success |       0 |     5 |    280
- 11 |       5 | Success |       0 |     4 |    224
- 12 |       5 | Success |       0 |    11 |    728
- 13 |       8 | Success |       0 |    10 |    672
- 14 |       4 | Success |       0 |     3 |    168
- 15 |       7 | Success |       0 |     9 |    616
- 16 |       7 | Success |       0 |    33 |   2296
- 17 |       9 | Success |       0 |    11 |    728
- 18 |       8 | Success |       0 |     8 |    504
- 19 |       7 | Success |       0 |    17 |   1176
- 20 |       9 | Success |       0 |    38 |   2744
+===== Stochastic Hill Climbing =====
+Start board : [1, 5, 6, 1, 5, 3, 5, 0]  h = 7
+Final board : [1, 4, 6, 3, 5, 7, 5, 0]  h = 2
+Result      : FAILURE (local optimum)
+Iterations  : 3
+Evaluations : 168
+<span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cursor">&nbsp;</span></div>
+        </div>
+    </div>
+    <div class="page-footer">
+        <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
+        <span class="footer-right">Page 21 of 27</span>
+    </div>
+</div>
 
+<!-- ================= PART 2: PAGE 22 ================= -->
+<div class="page">
+    <div class="content-body">
+        <p><strong>5. random_restart.py — Task 6</strong></p>
+        <p>Repeats Steepest Ascent from a new random board each time until h = 0.</p>
+
+        <div class="code-card"><span class="cm"># TASK 6 : Random Restart Hill Climbing</span>
+<span class="kw">import</span> random
+<span class="kw">from</span> nqueens_utils <span class="kw">import</span> count_conflicts, create_random_board, display_board, show_summary
+<span class="kw">from</span> steepest_hill <span class="kw">import</span> steepest_climb
+
+<span class="kw">def</span> <span class="fn">restart_climb</span>(board):
+    current = board[:]
+    total_iterations = <span class="num">0</span>
+    total_evaluations = <span class="num">0</span>
+    restarts = <span class="num">0</span>
+
+    <span class="kw-c">while True</span>:
+        final, h_val, iters, evals = steepest_climb(current)
+        total_iterations += iters
+        total_evaluations += evals
+
+        <span class="kw-c">if</span> h_val == <span class="num">0</span>:
+            <span class="kw-c">return</span> final, h_val, total_iterations, total_evaluations, restarts
+
+        current = create_random_board()
+        restarts += <span class="num">1</span>
+
+<span class="kw-c">if</span> __name__ == <span class="st">"__main__"</span>:
+    random.seed(<span class="num">42</span>)
+    initial = create_random_board()
+    final, h_val, iters, evals, restarts = restart_climb(initial)
+    print(<span class="st">"Random Restart Hill Climbing"</span>)
+    display_board(initial)
+    show_summary(<span class="st">"Random Restart Hill Climbing"</span>, initial, final, h_val, iters, evals)
+    print(<span class="st">"Restarts    :"</span>, restarts)</div>
+    </div>
+    <div class="page-footer">
+        <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
+        <span class="footer-right">Page 22 of 27</span>
+    </div>
+</div>
+
+<!-- ================= PART 2: PAGE 23 ================= -->
+<div class="page">
+    <div class="content-body">
+        <p><strong>Outputs :</strong></p>
+        <div class="terminal-card">
+            <div class="terminal-tabs">
+                <span>Problems</span>
+                <span>Output</span>
+                <span>Debug Console</span>
+                <span class="terminal-tab-active">Terminal</span>
+                <span>Ports</span>
+            </div>
+            <div class="terminal-body"><span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cmd">python .\restart_hill.py</span>
+Random Restart Hill Climbing
+ . . . . . . . Q
+ Q . . Q . . . .
+ . . . . . . . .
+ . . . . . Q . .
+ . . . . . . . .
+ . Q . . Q . Q .
+ . . Q . . . . .
+ . . . . . . . .
+
+===== Random Restart Hill Climbing =====
+Start board : [1, 5, 6, 1, 5, 3, 5, 0]  h = 7
+Final board : [4, 7, 3, 0, 2, 5, 1, 6]  h = 0
+Result      : SUCCESS
+Iterations  : 16
+Evaluations : 1120
+Restarts    : 4
+<span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cursor">&nbsp;</span></div>
+        </div>
+    </div>
+    <div class="page-footer">
+        <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
+        <span class="footer-right">Page 23 of 27</span>
+    </div>
+</div>
+
+<!-- ================= PART 2: PAGE 24 ================= -->
+<div class="page">
+    <div class="content-body">
+        <p><strong>6. run_experiments.py — Hill Climbing Experiments (20 Runs Observation Table)</strong></p>
+        <div class="terminal-card">
+            <div class="terminal-tabs">
+                <span>Problems</span>
+                <span>Output</span>
+                <span>Debug Console</span>
+                <span class="terminal-tab-active">Terminal</span>
+                <span>Ports</span>
+            </div>
+            <div class="terminal-body"><span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cmd">python .\run_experiments.py</span>
 ============== OBSERVATION TABLE ==============
 (seed = 21, 20 runs per algorithm)
 
@@ -1416,69 +1886,41 @@ Stochastic       |              2 |           4.90 |          324.80 |        1.
 Random Restart   |             20 |          19.15 |         1327.20 |        0.00
 <span class="ps-path">PS C:\Users\KHATRI OM KUMAR\Desktop\AI-SUBMITION&gt;</span> <span class="ps-cursor">&nbsp;</span></div>
         </div>
-    </div>
-    <div class="page-footer">
-        <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
-        <span class="footer-right">Page 20 of 22</span>
-    </div>
-</div>
 
-<!-- ================= PART 2: PAGE 21 ================= -->
-<div class="page">
-    <div class="content-body">
-        <h1 class="doc-title">Discussion Questions :</h1>
-        <br>
+        <h1 class="doc-title" style="margin-top: 15px;">Discussion Questions :</h1>
         <p><strong>1. Which algorithm solved the puzzle most often?</strong></p>
-        <p><strong>Answer:</strong></p>
-        <p>Random Restart solved the puzzle the most. It solved 20 out of 20 runs, so <strong>100% success</strong>.</p>
-        <p class="arrow-bullet">• The other three algorithms solved only about 2 to 5 runs out of 20.</p>
-        <p class="arrow-bullet">• The reason Random Restart works well is simple: if one starting position gets stuck, it starts again from a new random position. So even if one attempt fails, another attempt can succeed.</p>
+        <p><strong>Answer:</strong> Random Restart solved the puzzle the most (<strong>20/20 runs = 100% success</strong>). Standard hill climbers frequently trap in local optima.</p>
         <br>
         <p><strong>2. Which required the fewest neighbour evaluations?</strong></p>
-        <p><strong>Answer:</strong></p>
-        <p>First-Choice Hill Climbing required the fewest neighbour evaluations.</p>
-        <p class="arrow-bullet">• First-Choice → <strong>91.10</strong> evaluations/run</p>
-        <p class="arrow-bullet">• Steepest Ascent → <strong>226.80</strong> evaluations/run</p>
-        <p class="arrow-bullet">• Stochastic → <strong>324.80</strong> evaluations/run</p>
-        <p class="arrow-bullet">• The main reason is that First-Choice stops as soon as it finds one better neighbour.</p>
-        <p class="arrow-bullet">• Steepest Ascent checks all 56 possible neighbours and then chooses the best one.</p>
-        <p class="arrow-bullet">• So First-Choice saves a lot of computation.</p>
+        <p><strong>Answer:</strong> First-Choice Hill Climbing required only <strong>91.10 evaluations/run</strong> (vs 226.80 for Steepest Ascent and 324.80 for Stochastic) because it stops evaluating neighbours the instant an improving step is discovered.</p>
     </div>
     <div class="page-footer">
         <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
-        <span class="footer-right">Page 21 of 22</span>
+        <span class="footer-right">Page 24 of 27</span>
     </div>
 </div>
 
-<!-- ================= PART 2: PAGE 22 ================= -->
+<!-- ================= PART 2: PAGE 25 ================= -->
 <div class="page">
     <div class="content-body">
         <p><strong>3. Why does Steepest Ascent get stuck?</strong></p>
         <p><strong>Answer:</strong></p>
-        <p>Steepest Ascent gets stuck because it only looks at the current position and its immediate neighbours.</p>
-        <p class="arrow-bullet">• Sometimes it reaches a local optimum. This means:</p>
-        <p class="arrow-bullet">• The current board is not the solution, but none of its neighbouring boards is better.</p>
-        <p class="arrow-bullet">• So the algorithm stops because it cannot find a better move.</p>
-        <p class="arrow-bullet">• For example, suppose: Current h = 1 and every neighbouring board has h ≥ 1. The algorithm says, "There is no better move," and terminates, even though the actual solution requires h = 0.</p>
-        <p class="arrow-bullet">• Steepest Ascent does not allow a temporarily worse move to escape.</p>
+        <p>Steepest Ascent greedily moves only to strictly better states. In an 8-Queens state space with numerous local minima and shoulder plateaus (where current h is non-zero but all 56 neighbouring moves have equal or greater conflict), it finds no strictly improving move and terminates in failure.</p>
         <br>
         <p><strong>4. How does Random Restart overcome local optima?</strong></p>
         <p><strong>Answer:</strong></p>
-        <p>Random Restart doesn't try to escape the local optimum directly.</p>
-        <p class="arrow-bullet">• Instead, it throws away the stuck solution and starts fresh from a completely new random board.</p>
-        <p class="arrow-bullet">• Start → climb → local optimum → stuck → Restart with new random board → climb again.</p>
-        <p class="arrow-bullet">• By repeating restarts, it is mathematically likely to start from a basin of attraction that leads directly to the global optimum (h = 0).</p>
+        <p>Rather than trying to navigate out of a dead-end, Random Restart discards the stuck local optimum and re-seeds the search from a completely independent random initial configuration. Repeating this process guarantees complete search over finite boards with non-zero probability of landing in a global basin of attraction.</p>
         <br>
         <p><strong>5. Why can Stochastic Hill Climbing outperform Steepest Ascent?</strong></p>
         <p><strong>Answer:</strong></p>
-        <p>Steepest Ascent always greedily chooses the single best immediate move, which often drives the search into a steep local optimum trap. Stochastic Hill Climbing randomly selects among all improving neighbours. Even if a move gives a smaller immediate reduction in h, it can lead along a different branch of the state space that avoids traps and reaches h = 0.</p>
+        <p>Steepest Ascent deterministically pursues the steep gradient, which often plunges straight into a local trap. Stochastic Hill Climbing samples uniformly among all uphill moves, allowing exploration of gentler slopes that bypass local traps and reach a zero-conflict goal state.</p>
         <br>
-        <p><strong>➔ Conclusion :</strong></p>
-        <p>All four algorithms were tested on the 8-Queens problem. The three standard hill-climbing methods frequently get trapped in local optima, whereas <strong>Random Restart guarantees completeness</strong> given sufficient restarts at the cost of higher cumulative evaluations.</p>
+        <p class="arrow-bullet">➔ <strong>Comprehensive Practical Conclusion:</strong></p>
+        <p>Across both uninformed search (BFS, DFS) and informed search (A* with straight-line heuristic), <strong>A* delivers optimal path cost with minimal node expansion</strong>. Similarly, in local search for constraint satisfaction (8-Queens), <strong>Random Restart ensures 100% completeness</strong>, while First-Choice minimizes evaluation overhead.</p>
     </div>
     <div class="page-footer">
         <span class="footer-left">KHATRI OM KUMAR | Roll No: 36</span>
-        <span class="footer-right">Page 22 of 22</span>
+        <span class="footer-right">Page 25 of 27</span>
     </div>
 </div>
 

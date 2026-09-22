@@ -1,5 +1,6 @@
 from collections import deque
 from city_map import road_network
+from random_states import test_pairs
 
 def calculate_cost(route):
     total_dist = 0
@@ -10,7 +11,7 @@ def calculate_cost(route):
                 break
     return total_dist
 
-def bfs(source, destination):
+def bfs(source, destination, verbose=True):
     frontier = deque([[source]])
     explored = set()
     nodes_explored = 0
@@ -21,11 +22,13 @@ def bfs(source, destination):
         current_node = route[-1]
 
         if current_node == destination:
-            print("Path :", " -> ".join(route))
-            print("Cost :", calculate_cost(route))
-            print("Nodes Explored (Time Complexity) :", nodes_explored)
-            print("Max Nodes Stored (Space Complexity) :", max_stored)
-            return
+            cost = calculate_cost(route)
+            if verbose:
+                print("Path :", " -> ".join(route))
+                print("Cost :", cost)
+                print("Nodes Explored (Time Complexity) :", nodes_explored)
+                print("Max Nodes Stored (Space Complexity) :", max_stored)
+            return route, cost, nodes_explored, max_stored
 
         if current_node not in explored:
             explored.add(current_node)
@@ -38,7 +41,19 @@ def bfs(source, destination):
             if len(frontier) > max_stored:
                 max_stored = len(frontier)
 
+    return None, 0, nodes_explored, max_stored
+
 if __name__ == "__main__":
-    source = input("Start City : ")
-    destination = input("Goal City : ")
-    bfs(source, destination)
+    import sys
+    if len(sys.argv) == 3:
+        source, destination = sys.argv[1], sys.argv[2]
+        print(f"Start City : {source}")
+        print(f"Goal City  : {destination}")
+        bfs(source, destination)
+    else:
+        print("=" * 70)
+        print(" BREADTH FIRST SEARCH (BFS) - 15 RANDOM INITIAL & FINAL STATES")
+        print("=" * 70)
+        for idx, (source, destination) in enumerate(test_pairs, 1):
+            print(f"\n[Case {idx}] Start: {source} | Goal: {destination}")
+            bfs(source, destination)

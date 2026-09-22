@@ -1,8 +1,6 @@
 import heapq
-from cities import graph
-
-# Straight-line distance / heuristic table (defaults to 0 if not defined)
-heuristics = {}
+from cities import graph, straight_line_distance
+from random_states import test_pairs
 
 def find_cost(path):
     total = 0
@@ -14,10 +12,12 @@ def find_cost(path):
                     break
     return total
 
-def a_star(start, goal):
+def a_star(start, goal, verbose=True):
     # Queue stores tuples of (f_cost, g_cost, path)
     # f_cost = g_cost + h_cost
-    queue = [(0, 0, [start])]
+    # Using straight-line distance to goal as admissible heuristic h(n)
+    h_start = straight_line_distance(start, goal)
+    queue = [(h_start, 0, [start])]
     visited = []
     nodes_explored = 0
     max_stored = len(queue)
@@ -27,29 +27,43 @@ def a_star(start, goal):
         city = path[-1]
 
         if city == goal:
-            print("Path :", " -> ".join(path))
-            print("Cost :", find_cost(path))
-            print("Nodes Explored (Time Complexity) :", nodes_explored)
-            print("Max Nodes Stored (Space Complexity) :", max_stored)
-            return
+            cost = find_cost(path)
+            if verbose:
+                print("Path :", " -> ".join(path))
+                print("Cost :", cost)
+                print("Nodes Explored (Time Complexity) :", nodes_explored)
+                print("Max Nodes Stored (Space Complexity) :", max_stored)
+            return path, cost, nodes_explored, max_stored
 
         if city not in visited:
             visited.append(city)
             nodes_explored += 1
 
             if city in graph:
-                for neighbour, cost in graph[city]:
+                for neighbour, step_cost in graph[city]:
                     new_path = list(path)
                     new_path.append(neighbour)
-                    new_g_cost = g_cost + cost
-                    h_cost = heuristics.get(neighbour, 0)
+                    new_g_cost = g_cost + step_cost
+                    h_cost = straight_line_distance(neighbour, goal)
                     new_f_cost = new_g_cost + h_cost
                     heapq.heappush(queue, (new_f_cost, new_g_cost, new_path))
 
             if len(queue) > max_stored:
                 max_stored = len(queue)
 
+    return None, 0, nodes_explored, max_stored
+
 if __name__ == "__main__":
-    start = input("Start City : ")
-    goal = input("Goal City : ")
-    a_star(start, goal)
+    import sys
+    if len(sys.argv) == 3:
+        start, goal = sys.argv[1], sys.argv[2]
+        print(f"Start City : {start}")
+        print(f"Goal City  : {goal}")
+        a_star(start, goal)
+    else:
+        print("=" * 70)
+        print(" A* SEARCH ALGORITHM - 15 RANDOM INITIAL & FINAL STATES")
+        print("=" * 70)
+        for idx, (start, goal) in enumerate(test_pairs, 1):
+            print(f"\n[Case {idx}] Start: {start} | Goal: {goal}")
+            a_star(start, goal)
